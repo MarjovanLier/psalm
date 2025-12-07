@@ -74,43 +74,12 @@ return array (
       0 => 'int',
       'resource' => 'resource',
     ),
-    'ldap_exop' => 
-    array (
-      0 => 'bool|resource',
-      'ldap' => 'resource',
-      'request_oid' => 'string',
-      'request_data=' => 'null|string',
-      'controls=' => 'array<array-key, mixed>|null',
-      '&w response_data=' => 'string',
-      '&w response_oid=' => 'string',
-    ),
-    'ldap_exop_passwd' => 
-    array (
-      0 => 'bool|string',
-      'ldap' => 'resource',
-      'user=' => 'string',
-      'old_password=' => 'string',
-      'new_password=' => 'string',
-    ),
     'ldap_exop_refresh' => 
     array (
       0 => 'false|int',
       'ldap' => 'resource',
       'dn' => 'string',
       'ttl' => 'int',
-    ),
-    'ldap_exop_whoami' => 
-    array (
-      0 => 'false|string',
-      'ldap' => 'resource',
-    ),
-    'ldap_parse_exop' => 
-    array (
-      0 => 'bool',
-      'ldap' => 'resource',
-      'result' => 'resource',
-      '&w response_data=' => 'string',
-      '&w response_oid=' => 'string',
     ),
     'mb_chr' => 
     array (
@@ -241,28 +210,6 @@ return array (
       0 => 'bool',
       'stream' => 'resource',
       'enable=' => 'bool',
-    ),
-    'socket_addrinfo_bind' => 
-    array (
-      0 => 'null|resource',
-      'addrinfo' => 'resource',
-    ),
-    'socket_addrinfo_connect' => 
-    array (
-      0 => 'resource',
-      'addrinfo' => 'resource',
-    ),
-    'socket_addrinfo_explain' => 
-    array (
-      0 => 'array<array-key, mixed>',
-      'addrinfo' => 'resource',
-    ),
-    'socket_addrinfo_lookup' => 
-    array (
-      0 => 'array<array-key, resource>',
-      'host' => 'string',
-      'service=' => 'string',
-      'hints=' => 'array<array-key, mixed>',
     ),
     'sodium_add' => 
     array (
@@ -755,11 +702,6 @@ return array (
     array (
       0 => 'bool',
       'stream' => 'resource',
-    ),
-    'xdebug_info' => 
-    array (
-      0 => 'mixed',
-      'category=' => 'string',
     ),
     'ziparchive::count' => 
     array (

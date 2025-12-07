@@ -1,11 +1,6 @@
 <?php // phpcs:ignoreFile
 
 return array (
-  '_' => 
-  array (
-    0 => 'string',
-    'message' => 'string',
-  ),
   '__halt_compiler' => 
   array (
     0 => 'void',
@@ -2899,22 +2894,10 @@ return array (
     0 => 'string',
     'data' => 'string',
   ),
-  'bind_textdomain_codeset' => 
-  array (
-    0 => 'string',
-    'domain' => 'string',
-    'codeset' => 'string',
-  ),
   'bindec' => 
   array (
     0 => 'float|int',
     'binary_number' => 'string',
-  ),
-  'bindtextdomain' => 
-  array (
-    0 => 'string',
-    'domain' => 'string',
-    'directory' => 'string',
   ),
   'birdstep_autocommit' => 
   array (
@@ -3003,63 +2986,6 @@ return array (
     0 => 'string',
     'anything' => 'mixed',
   ),
-  'bzclose' => 
-  array (
-    0 => 'bool',
-    'bz' => 'resource',
-  ),
-  'bzcompress' => 
-  array (
-    0 => 'int|string',
-    'data' => 'string',
-    'block_size=' => 'int',
-    'work_factor=' => 'int',
-  ),
-  'bzdecompress' => 
-  array (
-    0 => 'false|int|string',
-    'data' => 'string',
-    'use_less_memory=' => 'int',
-  ),
-  'bzerrno' => 
-  array (
-    0 => 'int',
-    'bz' => 'resource',
-  ),
-  'bzerror' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'bz' => 'resource',
-  ),
-  'bzerrstr' => 
-  array (
-    0 => 'string',
-    'bz' => 'resource',
-  ),
-  'bzflush' => 
-  array (
-    0 => 'bool',
-    'bz' => 'resource',
-  ),
-  'bzopen' => 
-  array (
-    0 => 'false|resource',
-    'file' => 'resource|string',
-    'mode' => 'string',
-  ),
-  'bzread' => 
-  array (
-    0 => 'false|string',
-    'bz' => 'resource',
-    'length=' => 'int',
-  ),
-  'bzwrite' => 
-  array (
-    0 => 'false|int',
-    'bz' => 'resource',
-    'data' => 'string',
-    'length=' => 'int',
-  ),
   'cachingiterator::__construct' => 
   array (
     0 => 'void',
@@ -3135,32 +3061,6 @@ return array (
   'cachingiterator::valid' => 
   array (
     0 => 'bool',
-  ),
-  'cal_days_in_month' => 
-  array (
-    0 => 'int',
-    'calendar' => 'int',
-    'month' => 'int',
-    'year' => 'int',
-  ),
-  'cal_from_jd' => 
-  array (
-    0 => 'array{abbrevdayname: string, abbrevmonth: string, date: string, day: int, dayname: string, dow: int, month: int, monthname: string, year: int}',
-    'julian_day' => 'int',
-    'calendar' => 'int',
-  ),
-  'cal_info' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'calendar=' => 'int',
-  ),
-  'cal_to_jd' => 
-  array (
-    0 => 'int',
-    'calendar' => 'int',
-    'month' => 'int',
-    'day' => 'int',
-    'year' => 'int',
   ),
   'calcul_hmac' => 
   array (
@@ -15230,99 +15130,11 @@ return array (
     'table_name=' => 'null|string',
     'table_type=' => 'null|string',
   ),
-  'dba_close' => 
-  array (
-    0 => 'void',
-    'dba' => 'resource',
-  ),
-  'dba_delete' => 
-  array (
-    0 => 'bool',
-    'key' => 'array<array-key, mixed>|string',
-    'dba' => 'resource',
-  ),
-  'dba_exists' => 
-  array (
-    0 => 'bool',
-    'key' => 'array<array-key, mixed>|string',
-    'dba' => 'resource',
-  ),
-  'dba_fetch' => 
-  array (
-    0 => 'false|string',
-    'key' => 'array<array-key, mixed>|string',
-    'skip' => 'int',
-    'dba' => 'resource',
-  ),
   'dba_fetch\'1' => 
   array (
     0 => 'false|string',
     'key' => 'array<array-key, mixed>|string',
     'skip' => 'resource',
-  ),
-  'dba_firstkey' => 
-  array (
-    0 => 'string',
-    'dba' => 'resource',
-  ),
-  'dba_handlers' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'full_info=' => 'bool',
-  ),
-  'dba_insert' => 
-  array (
-    0 => 'bool',
-    'key' => 'array<array-key, mixed>|string',
-    'value' => 'string',
-    'dba' => 'resource',
-  ),
-  'dba_key_split' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'key' => 'false|null|string',
-  ),
-  'dba_list' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'dba_nextkey' => 
-  array (
-    0 => 'string',
-    'dba' => 'resource',
-  ),
-  'dba_open' => 
-  array (
-    0 => 'resource',
-    'path' => 'string',
-    'mode' => 'string',
-    'handler=' => 'string',
-    '...handler_params=' => 'string',
-  ),
-  'dba_optimize' => 
-  array (
-    0 => 'bool',
-    'dba' => 'resource',
-  ),
-  'dba_popen' => 
-  array (
-    0 => 'resource',
-    'path' => 'string',
-    'mode' => 'string',
-    'handler=' => 'string',
-    '...handler_params=' => 'string',
-  ),
-  'dba_replace' => 
-  array (
-    0 => 'bool',
-    'key' => 'array<array-key, mixed>|string',
-    'value' => 'string',
-    'dba' => 'resource',
-  ),
-  'dba_sync' => 
-  array (
-    0 => 'bool',
-    'dba' => 'resource',
   ),
   'dbase_add_record' => 
   array (
@@ -15716,22 +15528,6 @@ return array (
     'result' => 'object',
     'user_compare_function' => 'string',
   ),
-  'dcgettext' => 
-  array (
-    0 => 'string',
-    'domain' => 'string',
-    'message' => 'string',
-    'category' => 'int',
-  ),
-  'dcngettext' => 
-  array (
-    0 => 'string',
-    'domain' => 'string',
-    'singular' => 'string',
-    'plural' => 'string',
-    'count' => 'int',
-    'category' => 'int',
-  ),
   'deaggregate' => 
   array (
     0 => 'mixed',
@@ -15829,12 +15625,6 @@ return array (
   array (
     0 => 'float',
     'number' => 'float',
-  ),
-  'dgettext' => 
-  array (
-    0 => 'string',
-    'domain' => 'string',
-    'message' => 'string',
   ),
   'dio_close' => 
   array (
@@ -16151,14 +15941,6 @@ return array (
   array (
     0 => 'bool',
     'extension_filename' => 'string',
-  ),
-  'dngettext' => 
-  array (
-    0 => 'string',
-    'domain' => 'string',
-    'singular' => 'string',
-    'plural' => 'string',
-    'count' => 'int',
   ),
   'dns_check_record' => 
   array (
@@ -19897,18 +19679,6 @@ return array (
     0 => 'array{0: int|string, 1: mixed, key: int|string, value: mixed}',
     '&r arr' => 'array<array-key, mixed>',
   ),
-  'easter_date' => 
-  array (
-    0 => 'int',
-    'year=' => 'int',
-    'mode=' => 'int',
-  ),
-  'easter_days' => 
-  array (
-    0 => 'int',
-    'year=' => 'int',
-    'mode=' => 'int',
-  ),
   'echo' => 
   array (
     0 => 'void',
@@ -22716,32 +22486,6 @@ return array (
     '&w output=' => 'array<array-key, mixed>',
     '&w return_value=' => 'int',
   ),
-  'exif_imagetype' => 
-  array (
-    0 => 'false|int',
-    'filename' => 'string',
-  ),
-  'exif_read_data' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'file' => 'resource|string',
-    'required_sections=' => 'string',
-    'as_arrays=' => 'bool',
-    'read_thumbnail=' => 'bool',
-  ),
-  'exif_tagname' => 
-  array (
-    0 => 'false|string',
-    'index' => 'int',
-  ),
-  'exif_thumbnail' => 
-  array (
-    0 => 'false|string',
-    'file' => 'string',
-    '&w width=' => 'int',
-    '&w height=' => 'int',
-    '&w image_type=' => 'int',
-  ),
   'exp' => 
   array (
     0 => 'float',
@@ -25191,13 +24935,6 @@ return array (
     'fp' => 'resource',
     'length' => 'int',
   ),
-  'frenchtojd' => 
-  array (
-    0 => 'int',
-    'month' => 'int',
-    'day' => 'int',
-    'year' => 'int',
-  ),
   'fribidi_log2vis' => 
   array (
     0 => 'string',
@@ -27467,11 +27204,6 @@ return array (
     'port' => 'int',
     'protocol' => 'string',
   ),
-  'gettext' => 
-  array (
-    0 => 'string',
-    'message' => 'string',
-  ),
   'gettimeofday' => 
   array (
     0 => 'array<string, int>',
@@ -29233,13 +28965,6 @@ return array (
     'string' => 'string',
     'start' => 'int',
     'length=' => 'int|null',
-  ),
-  'gregoriantojd' => 
-  array (
-    0 => 'int',
-    'month' => 'int',
-    'day' => 'int',
-    'year' => 'int',
   ),
   'gridobj::set' => 
   array (
@@ -43261,52 +42986,6 @@ return array (
   array (
     0 => 'object',
   ),
-  'jddayofweek' => 
-  array (
-    0 => 'int|string',
-    'julian_day' => 'int',
-    'mode=' => 'int',
-  ),
-  'jdmonthname' => 
-  array (
-    0 => 'string',
-    'julian_day' => 'int',
-    'mode' => 'int',
-  ),
-  'jdtofrench' => 
-  array (
-    0 => 'string',
-    'julian_day' => 'int',
-  ),
-  'jdtogregorian' => 
-  array (
-    0 => 'string',
-    'julian_day' => 'int',
-  ),
-  'jdtojewish' => 
-  array (
-    0 => 'string',
-    'julian_day' => 'int',
-    'hebrew=' => 'bool',
-    'flags=' => 'int',
-  ),
-  'jdtojulian' => 
-  array (
-    0 => 'string',
-    'julian_day' => 'int',
-  ),
-  'jdtounix' => 
-  array (
-    0 => 'false|int',
-    'julian_day' => 'int',
-  ),
-  'jewishtojd' => 
-  array (
-    0 => 'int',
-    'month' => 'int',
-    'day' => 'int',
-    'year' => 'int',
-  ),
   'jobqueue_license_info' => 
   array (
     0 => 'array<array-key, mixed>',
@@ -43539,13 +43218,6 @@ return array (
   'judy_version' => 
   array (
     0 => 'string',
-  ),
-  'juliantojd' => 
-  array (
-    0 => 'int',
-    'month' => 'int',
-    'day' => 'int',
-    'year' => 'int',
   ),
   'kadm5_chpass_principal' => 
   array (
@@ -44161,60 +43833,6 @@ return array (
     0 => 'string',
     'value' => 'string',
   ),
-  'ldap_add' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_add_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_bind' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn=' => 'null|string',
-    'password=' => 'null|string',
-  ),
-  'ldap_bind_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn=' => 'null|string',
-    'password=' => 'null|string',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_close' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-  ),
-  'ldap_compare' => 
-  array (
-    0 => 'bool|int',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'attribute' => 'string',
-    'value' => 'string',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_connect' => 
-  array (
-    0 => 'false|resource',
-    'uri=' => 'null|string',
-    'port=' => 'int',
-    'wallet=' => 'string',
-    'password=' => 'string',
-    'auth_mode=' => 'int',
-  ),
   'ldap_control_paged_result' => 
   array (
     0 => 'bool',
@@ -44231,343 +43849,12 @@ return array (
     '&w cookie' => 'string',
     '&w estimated' => 'int',
   ),
-  'ldap_count_entries' => 
-  array (
-    0 => 'int',
-    'ldap' => 'resource',
-    'result' => 'resource',
-  ),
-  'ldap_delete' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_delete_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_dn2ufn' => 
-  array (
-    0 => 'false|string',
-    'dn' => 'string',
-  ),
-  'ldap_err2str' => 
-  array (
-    0 => 'string',
-    'errno' => 'int',
-  ),
-  'ldap_errno' => 
-  array (
-    0 => 'int',
-    'ldap' => 'resource',
-  ),
-  'ldap_error' => 
-  array (
-    0 => 'string',
-    'ldap' => 'resource',
-  ),
-  'ldap_escape' => 
-  array (
-    0 => 'string',
-    'value' => 'string',
-    'ignore=' => 'string',
-    'flags=' => 'int',
-  ),
-  'ldap_exop' => 
-  array (
-    0 => 'bool|resource',
-    'ldap' => 'resource',
-    'request_oid' => 'string',
-    'request_data=' => 'null|string',
-    'controls=' => 'array<array-key, mixed>|null',
-    '&w response_data=' => 'string',
-    '&w response_oid=' => 'string',
-  ),
-  'ldap_exop_passwd' => 
-  array (
-    0 => 'bool|string',
-    'ldap' => 'resource',
-    'user=' => 'string',
-    'old_password=' => 'string',
-    'new_password=' => 'string',
-    '&w controls=' => 'array<array-key, mixed>',
-  ),
   'ldap_exop_refresh' => 
   array (
     0 => 'false|int',
     'ldap' => 'resource',
     'dn' => 'string',
     'ttl' => 'int',
-  ),
-  'ldap_exop_whoami' => 
-  array (
-    0 => 'false|string',
-    'ldap' => 'resource',
-  ),
-  'ldap_explode_dn' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'dn' => 'string',
-    'with_attrib' => 'int',
-  ),
-  'ldap_first_attribute' => 
-  array (
-    0 => 'false|string',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-  ),
-  'ldap_first_entry' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'result' => 'resource',
-  ),
-  'ldap_first_reference' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'result' => 'resource',
-  ),
-  'ldap_free_result' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-  ),
-  'ldap_get_attributes' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-  ),
-  'ldap_get_dn' => 
-  array (
-    0 => 'false|string',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-  ),
-  'ldap_get_entries' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'ldap' => 'resource',
-    'result' => 'resource',
-  ),
-  'ldap_get_option' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'option' => 'int',
-    '&w value=' => 'array<array-key, mixed>|int|string',
-  ),
-  'ldap_get_values' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-    'attribute' => 'string',
-  ),
-  'ldap_get_values_len' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-    'attribute' => 'string',
-  ),
-  'ldap_list' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'array<array-key, mixed>|resource',
-    'base' => 'array<array-key, mixed>|string',
-    'filter' => 'array<array-key, mixed>|string',
-    'attributes=' => 'array<array-key, mixed>',
-    'attributes_only=' => 'int',
-    'sizelimit=' => 'int',
-    'timelimit=' => 'int',
-    'deref=' => 'int',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_mod_add' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_mod_add_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_mod_del' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_mod_del_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_mod_replace' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_mod_replace_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_modify' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'entry' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_modify_batch' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'modifications_info' => 'array<array-key, mixed>',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_next_attribute' => 
-  array (
-    0 => 'false|string',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-  ),
-  'ldap_next_entry' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-  ),
-  'ldap_next_reference' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-  ),
-  'ldap_parse_exop' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'result' => 'resource',
-    '&w response_data=' => 'string',
-    '&w response_oid=' => 'string',
-  ),
-  'ldap_parse_reference' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'entry' => 'resource',
-    '&w referrals' => 'array<array-key, mixed>',
-  ),
-  'ldap_parse_result' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'result' => 'resource',
-    '&w error_code' => 'int',
-    '&w matched_dn=' => 'string',
-    '&w error_message=' => 'string',
-    '&w referrals=' => 'array<array-key, mixed>',
-    '&w controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_read' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'array<array-key, mixed>|resource',
-    'base' => 'array<array-key, mixed>|string',
-    'filter' => 'array<array-key, mixed>|string',
-    'attributes=' => 'array<array-key, mixed>',
-    'attributes_only=' => 'int',
-    'sizelimit=' => 'int',
-    'timelimit=' => 'int',
-    'deref=' => 'int',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_rename' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'new_rdn' => 'string',
-    'new_parent' => 'string',
-    'delete_old_rdn' => 'bool',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_rename_ext' => 
-  array (
-    0 => 'false|resource',
-    'ldap' => 'resource',
-    'dn' => 'string',
-    'new_rdn' => 'string',
-    'new_parent' => 'string',
-    'delete_old_rdn' => 'bool',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_sasl_bind' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'dn=' => 'string',
-    'password=' => 'string',
-    'mech=' => 'string',
-    'realm=' => 'string',
-    'authc_id=' => 'string',
-    'authz_id=' => 'string',
-    'props=' => 'string',
-  ),
-  'ldap_search' => 
-  array (
-    0 => 'array<array-key, resource>|false|resource',
-    'ldap' => 'array<array-key, resource>|resource',
-    'base' => 'array<array-key, mixed>|string',
-    'filter' => 'array<array-key, mixed>|string',
-    'attributes=' => 'array<array-key, mixed>',
-    'attributes_only=' => 'int',
-    'sizelimit=' => 'int',
-    'timelimit=' => 'int',
-    'deref=' => 'int',
-    'controls=' => 'array<array-key, mixed>',
-  ),
-  'ldap_set_option' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'null|resource',
-    'option' => 'int',
-    'value' => 'mixed',
-  ),
-  'ldap_set_rebind_proc' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-    'callback' => 'callable',
   ),
   'ldap_sort' => 
   array (
@@ -44576,20 +43863,10 @@ return array (
     'result_identifier' => 'resource',
     'sortfilter' => 'string',
   ),
-  'ldap_start_tls' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
-  ),
   'ldap_t61_to_8859' => 
   array (
     0 => 'string',
     'value' => 'string',
-  ),
-  'ldap_unbind' => 
-  array (
-    0 => 'bool',
-    'ldap' => 'resource',
   ),
   'leak' => 
   array (
@@ -52226,55 +51503,6 @@ return array (
     'session' => 'string',
     'key' => 'int',
   ),
-  'msg_get_queue' => 
-  array (
-    0 => 'false|resource',
-    'key' => 'int',
-    'permissions=' => 'int',
-  ),
-  'msg_queue_exists' => 
-  array (
-    0 => 'bool',
-    'key' => 'int',
-  ),
-  'msg_receive' => 
-  array (
-    0 => 'bool',
-    'queue' => 'resource',
-    'desired_message_type' => 'int',
-    '&w received_message_type' => 'int',
-    'max_message_size' => 'int',
-    '&w message' => 'mixed',
-    'unserialize=' => 'bool',
-    'flags=' => 'int',
-    '&w error_code=' => 'int',
-  ),
-  'msg_remove_queue' => 
-  array (
-    0 => 'bool',
-    'queue' => 'resource',
-  ),
-  'msg_send' => 
-  array (
-    0 => 'bool',
-    'queue' => 'resource',
-    'message_type' => 'int',
-    'message' => 'mixed',
-    'serialize=' => 'bool',
-    'blocking=' => 'bool',
-    '&w error_code=' => 'int',
-  ),
-  'msg_set_queue' => 
-  array (
-    0 => 'bool',
-    'queue' => 'resource',
-    'data' => 'array<array-key, mixed>',
-  ),
-  'msg_stat_queue' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'queue' => 'resource',
-  ),
   'msgfmt_create' => 
   array (
     0 => 'MessageFormatter|null',
@@ -53335,304 +52563,6 @@ return array (
     0 => 'mysql_xdevapi\\TableUpdate',
     'where_expr' => 'string',
   ),
-  'mysqli::__construct' => 
-  array (
-    0 => 'void',
-    'hostname=' => 'string',
-    'username=' => 'string',
-    'password=' => 'string',
-    'database=' => 'string',
-    'port=' => 'int',
-    'socket=' => 'string',
-  ),
-  'mysqli::autocommit' => 
-  array (
-    0 => 'bool',
-    'enable' => 'bool',
-  ),
-  'mysqli::begin_transaction' => 
-  array (
-    0 => 'bool',
-    'flags=' => 'int',
-    'name=' => 'string',
-  ),
-  'mysqli::change_user' => 
-  array (
-    0 => 'bool',
-    'username' => 'string',
-    'password' => 'string',
-    'database' => 'null|string',
-  ),
-  'mysqli::character_set_name' => 
-  array (
-    0 => 'string',
-  ),
-  'mysqli::close' => 
-  array (
-    0 => 'true',
-  ),
-  'mysqli::commit' => 
-  array (
-    0 => 'bool',
-    'flags=' => 'int',
-    'name=' => 'string',
-  ),
-  'mysqli::connect' => 
-  array (
-    0 => 'false|null',
-    'hostname=' => 'string',
-    'username=' => 'string',
-    'password=' => 'string',
-    'database=' => 'string',
-    'port=' => 'int',
-    'socket=' => 'string',
-  ),
-  'mysqli::debug' => 
-  array (
-    0 => 'true',
-    'options' => 'string',
-  ),
-  'mysqli::dump_debug_info' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli::escape_string' => 
-  array (
-    0 => 'string',
-    'string' => 'string',
-  ),
-  'mysqli::get_charset' => 
-  array (
-    0 => 'object',
-  ),
-  'mysqli::get_client_info' => 
-  array (
-    0 => 'string',
-  ),
-  'mysqli::get_connection_stats' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'mysqli::get_warnings' => 
-  array (
-    0 => 'mysqli_warning',
-  ),
-  'mysqli::init' => 
-  array (
-    0 => 'false|null',
-  ),
-  'mysqli::kill' => 
-  array (
-    0 => 'bool',
-    'process_id' => 'int',
-  ),
-  'mysqli::more_results' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli::multi_query' => 
-  array (
-    0 => 'bool',
-    'query' => 'string',
-  ),
-  'mysqli::next_result' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli::options' => 
-  array (
-    0 => 'bool',
-    'option' => 'int',
-    'value' => 'int|string',
-  ),
-  'mysqli::ping' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli::poll' => 
-  array (
-    0 => 'false|int',
-    '&w read' => 'array<array-key, mixed>|null',
-    '&w error' => 'array<array-key, mixed>|null',
-    '&w reject' => 'array<array-key, mixed>',
-    'seconds' => 'int',
-    'microseconds=' => 'int',
-  ),
-  'mysqli::prepare' => 
-  array (
-    0 => 'false|mysqli_stmt',
-    'query' => 'string',
-  ),
-  'mysqli::query' => 
-  array (
-    0 => 'bool|mysqli_result',
-    'query' => 'string',
-    'result_mode=' => 'int',
-  ),
-  'mysqli::real_connect' => 
-  array (
-    0 => 'bool',
-    'hostname=' => 'null|string',
-    'username=' => 'null|string',
-    'password=' => 'null|string',
-    'database=' => 'null|string',
-    'port=' => 'int|null',
-    'socket=' => 'null|string',
-    'flags=' => 'int',
-  ),
-  'mysqli::real_escape_string' => 
-  array (
-    0 => 'string',
-    'string' => 'string',
-  ),
-  'mysqli::real_query' => 
-  array (
-    0 => 'bool',
-    'query' => 'string',
-  ),
-  'mysqli::reap_async_query' => 
-  array (
-    0 => 'false|mysqli_result',
-  ),
-  'mysqli::refresh' => 
-  array (
-    0 => 'bool',
-    'flags' => 'int',
-  ),
-  'mysqli::release_savepoint' => 
-  array (
-    0 => 'bool',
-    'name' => 'string',
-  ),
-  'mysqli::rollback' => 
-  array (
-    0 => 'bool',
-    'flags=' => 'int',
-    'name=' => 'string',
-  ),
-  'mysqli::savepoint' => 
-  array (
-    0 => 'bool',
-    'name' => 'string',
-  ),
-  'mysqli::select_db' => 
-  array (
-    0 => 'bool',
-    'database' => 'string',
-  ),
-  'mysqli::set_charset' => 
-  array (
-    0 => 'bool',
-    'charset' => 'string',
-  ),
-  'mysqli::set_opt' => 
-  array (
-    0 => 'bool',
-    'option' => 'int',
-    'value' => 'int|string',
-  ),
-  'mysqli::ssl_set' => 
-  array (
-    0 => 'true',
-    'key' => 'null|string',
-    'certificate' => 'null|string',
-    'ca_certificate' => 'null|string',
-    'ca_path' => 'null|string',
-    'cipher_algos' => 'null|string',
-  ),
-  'mysqli::stat' => 
-  array (
-    0 => 'false|string',
-  ),
-  'mysqli::stmt_init' => 
-  array (
-    0 => 'mysqli_stmt',
-  ),
-  'mysqli::store_result' => 
-  array (
-    0 => 'false|mysqli_result',
-    'mode=' => 'int',
-  ),
-  'mysqli::thread_safe' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli::use_result' => 
-  array (
-    0 => 'false|mysqli_result',
-  ),
-  'mysqli_affected_rows' => 
-  array (
-    0 => 'int<-1, max>|numeric-string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_autocommit' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'enable' => 'bool',
-  ),
-  'mysqli_begin_transaction' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'flags=' => 'int',
-    'name=' => 'string',
-  ),
-  'mysqli_change_user' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'username' => 'string',
-    'password' => 'string',
-    'database' => 'null|string',
-  ),
-  'mysqli_character_set_name' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_close' => 
-  array (
-    0 => 'true',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_commit' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'flags=' => 'int',
-    'name=' => 'string',
-  ),
-  'mysqli_connect' => 
-  array (
-    0 => 'false|mysqli',
-    'hostname=' => 'string',
-    'username=' => 'string',
-    'password=' => 'string',
-    'database=' => 'string',
-    'port=' => 'int',
-    'socket=' => 'string',
-  ),
-  'mysqli_connect_errno' => 
-  array (
-    0 => 'int',
-  ),
-  'mysqli_connect_error' => 
-  array (
-    0 => 'null|string',
-  ),
-  'mysqli_data_seek' => 
-  array (
-    0 => 'bool',
-    'result' => 'mysqli_result',
-    'offset' => 'int',
-  ),
-  'mysqli_debug' => 
-  array (
-    0 => 'true',
-    'options' => 'string',
-  ),
   'mysqli_disable_reads_from_master' => 
   array (
     0 => 'bool',
@@ -53642,11 +52572,6 @@ return array (
   array (
     0 => 'bool',
     'link' => 'mysqli',
-  ),
-  'mysqli_dump_debug_info' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
   ),
   'mysqli_embedded_server_end' => 
   array (
@@ -53669,38 +52594,6 @@ return array (
     0 => 'bool',
     'link' => 'mysqli',
   ),
-  'mysqli_errno' => 
-  array (
-    0 => 'int',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_error' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_error_list' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_escape_string' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-    'string' => 'string',
-  ),
-  'mysqli_execute' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_fetch_all' => 
-  array (
-    0 => 'list<array<array-key, float|int|null|string>>',
-    'result' => 'mysqli_result',
-    'mode=' => '3',
-  ),
   'mysqli_fetch_all\'1' => 
   array (
     0 => 'list<array<string, float|int|null|string>>',
@@ -53712,12 +52605,6 @@ return array (
     0 => 'list<list<float|int|null|string>>',
     'result' => 'mysqli_result',
     'mode=' => '2',
-  ),
-  'mysqli_fetch_array' => 
-  array (
-    0 => 'array<array-key, float|int|null|string>|false|null',
-    'result' => 'mysqli_result',
-    'mode=' => '3',
   ),
   'mysqli_fetch_array\'1' => 
   array (
@@ -53731,140 +52618,9 @@ return array (
     'result' => 'mysqli_result',
     'mode=' => '2',
   ),
-  'mysqli_fetch_assoc' => 
-  array (
-    0 => 'array<string, float|int|null|string>|false|null',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_fetch_field' => 
-  array (
-    0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:int, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_fetch_field_direct' => 
-  array (
-    0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:int, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
-    'result' => 'mysqli_result',
-    'index' => 'int',
-  ),
-  'mysqli_fetch_fields' => 
-  array (
-    0 => 'list<object{name:string, orgname:string, table:string, orgtable:string, max_length:int, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}>',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_fetch_lengths' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_fetch_object' => 
-  array (
-    0 => 'false|null|object',
-    'result' => 'mysqli_result',
-    'class=' => 'string',
-    'constructor_args=' => 'array<array-key, mixed>',
-  ),
-  'mysqli_fetch_row' => 
-  array (
-    0 => 'false|list<float|int|null|string>|null',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_field_count' => 
-  array (
-    0 => 'int',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_field_seek' => 
-  array (
-    0 => 'bool',
-    'result' => 'mysqli_result',
-    'index' => 'int',
-  ),
-  'mysqli_field_tell' => 
-  array (
-    0 => 'int',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_free_result' => 
-  array (
-    0 => 'void',
-    'result' => 'mysqli_result',
-  ),
   'mysqli_get_cache_stats' => 
   array (
     0 => 'array<array-key, mixed>|false',
-  ),
-  'mysqli_get_charset' => 
-  array (
-    0 => 'null|object',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_get_client_info' => 
-  array (
-    0 => 'string',
-    'mysql=' => 'mysqli|null',
-  ),
-  'mysqli_get_client_stats' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'mysqli_get_client_version' => 
-  array (
-    0 => 'int',
-  ),
-  'mysqli_get_connection_stats' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_get_host_info' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_get_links_stats' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'mysqli_get_proto_info' => 
-  array (
-    0 => 'int',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_get_server_info' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_get_server_version' => 
-  array (
-    0 => 'int',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_get_warnings' => 
-  array (
-    0 => 'mysqli_warning',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_info' => 
-  array (
-    0 => 'null|string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_init' => 
-  array (
-    0 => 'false|mysqli',
-  ),
-  'mysqli_insert_id' => 
-  array (
-    0 => 'int|string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_kill' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'process_id' => 'int',
   ),
   'mysqli_link_construct' => 
   array (
@@ -53876,132 +52632,6 @@ return array (
     'link' => 'mysqli',
     'query' => 'string',
   ),
-  'mysqli_more_results' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_multi_query' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'query' => 'string',
-  ),
-  'mysqli_next_result' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_num_fields' => 
-  array (
-    0 => 'int',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_num_rows' => 
-  array (
-    0 => 'int<0, max>|numeric-string',
-    'result' => 'mysqli_result',
-  ),
-  'mysqli_options' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'option' => 'int',
-    'value' => 'int|string',
-  ),
-  'mysqli_ping' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_poll' => 
-  array (
-    0 => 'false|int',
-    '&w read' => 'array<array-key, mixed>|null',
-    '&w error' => 'array<array-key, mixed>|null',
-    '&w reject' => 'array<array-key, mixed>',
-    'seconds' => 'int',
-    'microseconds=' => 'int',
-  ),
-  'mysqli_prepare' => 
-  array (
-    0 => 'false|mysqli_stmt',
-    'mysql' => 'mysqli',
-    'query' => 'string',
-  ),
-  'mysqli_query' => 
-  array (
-    0 => 'bool|mysqli_result',
-    'mysql' => 'mysqli',
-    'query' => 'string',
-    'result_mode=' => 'int',
-  ),
-  'mysqli_real_connect' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'hostname=' => 'null|string',
-    'username=' => 'null|string',
-    'password=' => 'null|string',
-    'database=' => 'null|string',
-    'port=' => 'int|null',
-    'socket=' => 'null|string',
-    'flags=' => 'int',
-  ),
-  'mysqli_real_escape_string' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-    'string' => 'string',
-  ),
-  'mysqli_real_query' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'query' => 'string',
-  ),
-  'mysqli_reap_async_query' => 
-  array (
-    0 => 'false|mysqli_result',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_refresh' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'flags' => 'int',
-  ),
-  'mysqli_release_savepoint' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'name' => 'string',
-  ),
-  'mysqli_report' => 
-  array (
-    0 => 'bool',
-    'flags' => 'int',
-  ),
-  'mysqli_result::__construct' => 
-  array (
-    0 => 'void',
-    'mysql' => 'mysqli',
-    'result_mode=' => 'int',
-  ),
-  'mysqli_result::close' => 
-  array (
-    0 => 'void',
-  ),
-  'mysqli_result::data_seek' => 
-  array (
-    0 => 'bool',
-    'offset' => 'int',
-  ),
-  'mysqli_result::fetch_all' => 
-  array (
-    0 => 'list<array<array-key, float|int|null|string>>',
-    'mode=' => '3',
-  ),
   'mysqli_result::fetch_all\'1' => 
   array (
     0 => 'list<array<string, float|int|null|string>>',
@@ -54012,11 +52642,6 @@ return array (
     0 => 'list<list<float|int|null|string>>',
     'mode=' => '2',
   ),
-  'mysqli_result::fetch_array' => 
-  array (
-    0 => 'array<array-key, float|int|null|string>|false|null',
-    'mode=' => '3',
-  ),
   'mysqli_result::fetch_array\'1' => 
   array (
     0 => 'array<string, float|int|null|string>|false|null',
@@ -54026,53 +52651,6 @@ return array (
   array (
     0 => 'false|list<float|int|null|string>|null',
     'mode=' => '2',
-  ),
-  'mysqli_result::fetch_assoc' => 
-  array (
-    0 => 'array<string, float|int|null|string>|false|null',
-  ),
-  'mysqli_result::fetch_field' => 
-  array (
-    0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:int, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
-  ),
-  'mysqli_result::fetch_field_direct' => 
-  array (
-    0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:int, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
-    'index' => 'int',
-  ),
-  'mysqli_result::fetch_fields' => 
-  array (
-    0 => 'list<object{name:string, orgname:string, table:string, orgtable:string, max_length:int, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}>',
-  ),
-  'mysqli_result::fetch_object' => 
-  array (
-    0 => 'false|null|object',
-    'class=' => 'string',
-    'constructor_args=' => 'array<array-key, mixed>',
-  ),
-  'mysqli_result::fetch_row' => 
-  array (
-    0 => 'false|list<float|int|null|string>|null',
-  ),
-  'mysqli_result::field_seek' => 
-  array (
-    0 => 'bool',
-    'index' => 'int',
-  ),
-  'mysqli_result::free' => 
-  array (
-    0 => 'void',
-  ),
-  'mysqli_result::free_result' => 
-  array (
-    0 => 'void',
-  ),
-  'mysqli_rollback' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'flags=' => 'int',
-    'name=' => 'string',
   ),
   'mysqli_rpl_parse_enabled' => 
   array (
@@ -54090,33 +52668,15 @@ return array (
     'link' => 'mysqli',
     'query' => 'string',
   ),
-  'mysqli_savepoint' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'name' => 'string',
-  ),
   'mysqli_savepoint_libmysql' => 
   array (
     0 => 'bool',
-  ),
-  'mysqli_select_db' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'database' => 'string',
   ),
   'mysqli_send_query' => 
   array (
     0 => 'bool',
     'link' => 'mysqli',
     'query' => 'string',
-  ),
-  'mysqli_set_charset' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'charset' => 'string',
   ),
   'mysqli_set_local_infile_default' => 
   array (
@@ -54129,317 +52689,11 @@ return array (
     'link' => 'mysqli',
     'read_func' => 'callable',
   ),
-  'mysqli_set_opt' => 
-  array (
-    0 => 'bool',
-    'mysql' => 'mysqli',
-    'option' => 'int',
-    'value' => 'int|string',
-  ),
   'mysqli_slave_query' => 
   array (
     0 => 'bool',
     'link' => 'mysqli',
     'query' => 'string',
-  ),
-  'mysqli_sqlstate' => 
-  array (
-    0 => 'string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_ssl_set' => 
-  array (
-    0 => 'true',
-    'mysql' => 'mysqli',
-    'key' => 'null|string',
-    'certificate' => 'null|string',
-    'ca_certificate' => 'null|string',
-    'ca_path' => 'null|string',
-    'cipher_algos' => 'null|string',
-  ),
-  'mysqli_stat' => 
-  array (
-    0 => 'false|string',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_stmt::__construct' => 
-  array (
-    0 => 'void',
-    'mysql' => 'mysqli',
-    'query=' => 'string',
-  ),
-  'mysqli_stmt::attr_get' => 
-  array (
-    0 => 'int',
-    'attribute' => 'int',
-  ),
-  'mysqli_stmt::attr_set' => 
-  array (
-    0 => 'bool',
-    'attribute' => 'int',
-    'value' => 'int',
-  ),
-  'mysqli_stmt::bind_param' => 
-  array (
-    0 => 'bool',
-    'types' => 'string',
-    '&var' => 'mixed',
-    '&...vars=' => 'mixed',
-  ),
-  'mysqli_stmt::bind_result' => 
-  array (
-    0 => 'bool',
-    '&w var1' => 'mixed',
-    '&...w vars=' => 'mixed',
-  ),
-  'mysqli_stmt::close' => 
-  array (
-    0 => 'true',
-  ),
-  'mysqli_stmt::data_seek' => 
-  array (
-    0 => 'void',
-    'offset' => 'int',
-  ),
-  'mysqli_stmt::execute' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_stmt::fetch' => 
-  array (
-    0 => 'bool|null',
-  ),
-  'mysqli_stmt::free_result' => 
-  array (
-    0 => 'void',
-  ),
-  'mysqli_stmt::get_result' => 
-  array (
-    0 => 'false|mysqli_result',
-  ),
-  'mysqli_stmt::get_warnings' => 
-  array (
-    0 => 'object',
-  ),
-  'mysqli_stmt::more_results' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_stmt::next_result' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_stmt::num_rows' => 
-  array (
-    0 => 'int<0, max>|numeric-string',
-  ),
-  'mysqli_stmt::prepare' => 
-  array (
-    0 => 'bool',
-    'query' => 'string',
-  ),
-  'mysqli_stmt::reset' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_stmt::result_metadata' => 
-  array (
-    0 => 'false|mysqli_result',
-  ),
-  'mysqli_stmt::send_long_data' => 
-  array (
-    0 => 'bool',
-    'param_num' => 'int',
-    'data' => 'string',
-  ),
-  'mysqli_stmt::store_result' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_stmt_affected_rows' => 
-  array (
-    0 => 'int<-1, max>|numeric-string',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_attr_get' => 
-  array (
-    0 => 'int',
-    'statement' => 'mysqli_stmt',
-    'attribute' => 'int',
-  ),
-  'mysqli_stmt_attr_set' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-    'attribute' => 'int',
-    'value' => 'int',
-  ),
-  'mysqli_stmt_bind_param' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-    'types' => 'string',
-    '&var' => 'mixed',
-    '&...vars=' => 'mixed',
-  ),
-  'mysqli_stmt_bind_result' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-    '&w var1' => 'mixed',
-    '&...w vars=' => 'mixed',
-  ),
-  'mysqli_stmt_close' => 
-  array (
-    0 => 'true',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_data_seek' => 
-  array (
-    0 => 'void',
-    'statement' => 'mysqli_stmt',
-    'offset' => 'int',
-  ),
-  'mysqli_stmt_errno' => 
-  array (
-    0 => 'int',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_error' => 
-  array (
-    0 => 'string',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_error_list' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_execute' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_fetch' => 
-  array (
-    0 => 'bool|null',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_field_count' => 
-  array (
-    0 => 'int',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_free_result' => 
-  array (
-    0 => 'void',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_get_result' => 
-  array (
-    0 => 'false|mysqli_result',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_get_warnings' => 
-  array (
-    0 => 'object',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_init' => 
-  array (
-    0 => 'mysqli_stmt',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_stmt_insert_id' => 
-  array (
-    0 => 'mixed',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_more_results' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_next_result' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_num_rows' => 
-  array (
-    0 => 'int',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_param_count' => 
-  array (
-    0 => 'int',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_prepare' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-    'query' => 'string',
-  ),
-  'mysqli_stmt_reset' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_result_metadata' => 
-  array (
-    0 => 'false|mysqli_result',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_send_long_data' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-    'param_num' => 'int',
-    'data' => 'string',
-  ),
-  'mysqli_stmt_sqlstate' => 
-  array (
-    0 => 'string',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_stmt_store_result' => 
-  array (
-    0 => 'bool',
-    'statement' => 'mysqli_stmt',
-  ),
-  'mysqli_store_result' => 
-  array (
-    0 => 'false|mysqli_result',
-    'mysql' => 'mysqli',
-    'mode=' => 'int',
-  ),
-  'mysqli_thread_id' => 
-  array (
-    0 => 'int',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_thread_safe' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_use_result' => 
-  array (
-    0 => 'false|mysqli_result',
-    'mysql' => 'mysqli',
-  ),
-  'mysqli_warning::__construct' => 
-  array (
-    0 => 'void',
-  ),
-  'mysqli_warning::next' => 
-  array (
-    0 => 'bool',
-  ),
-  'mysqli_warning_count' => 
-  array (
-    0 => 'int',
-    'mysql' => 'mysqli',
   ),
   'mysqlnd_memcache_get_config' => 
   array (
@@ -55056,13 +53310,6 @@ return array (
   array (
     0 => 'mixed',
     '&r arg' => 'array<array-key, mixed>|object',
-  ),
-  'ngettext' => 
-  array (
-    0 => 'string',
-    'singular' => 'string',
-    'plural' => 'string',
-    'count' => 'int',
   ),
   'nl2br' => 
   array (
@@ -56396,305 +54643,6 @@ return array (
   array (
     0 => 'float|int',
     'octal_number' => 'string',
-  ),
-  'odbc_autocommit' => 
-  array (
-    0 => 'bool|int',
-    'odbc' => 'resource',
-    'enable=' => 'bool',
-  ),
-  'odbc_binmode' => 
-  array (
-    0 => 'bool',
-    'statement' => 'resource',
-    'mode' => 'int',
-  ),
-  'odbc_close' => 
-  array (
-    0 => 'void',
-    'odbc' => 'resource',
-  ),
-  'odbc_close_all' => 
-  array (
-    0 => 'void',
-  ),
-  'odbc_columnprivileges' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog' => 'null|string',
-    'schema' => 'string',
-    'table' => 'string',
-    'column' => 'string',
-  ),
-  'odbc_columns' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog=' => 'null|string',
-    'schema=' => 'null|string',
-    'table=' => 'null|string',
-    'column=' => 'null|string',
-  ),
-  'odbc_commit' => 
-  array (
-    0 => 'bool',
-    'odbc' => 'resource',
-  ),
-  'odbc_connect' => 
-  array (
-    0 => 'false|resource',
-    'dsn' => 'string',
-    'user' => 'string',
-    'password' => 'string',
-    'cursor_option=' => 'int',
-  ),
-  'odbc_cursor' => 
-  array (
-    0 => 'string',
-    'statement' => 'resource',
-  ),
-  'odbc_data_source' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'odbc' => 'resource',
-    'fetch_type' => 'int',
-  ),
-  'odbc_do' => 
-  array (
-    0 => 'resource',
-    'odbc' => 'resource',
-    'query' => 'string',
-    'flags=' => 'int',
-  ),
-  'odbc_error' => 
-  array (
-    0 => 'string',
-    'odbc=' => 'resource',
-  ),
-  'odbc_errormsg' => 
-  array (
-    0 => 'string',
-    'odbc=' => 'resource',
-  ),
-  'odbc_exec' => 
-  array (
-    0 => 'resource',
-    'odbc' => 'resource',
-    'query' => 'string',
-    'flags=' => 'int',
-  ),
-  'odbc_execute' => 
-  array (
-    0 => 'bool',
-    'statement' => 'resource',
-    'params=' => 'array<array-key, mixed>',
-  ),
-  'odbc_fetch_array' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'statement' => 'resource',
-    'row=' => 'int',
-  ),
-  'odbc_fetch_into' => 
-  array (
-    0 => 'int',
-    'statement' => 'resource',
-    '&w array' => 'array<array-key, mixed>',
-    'row=' => 'int',
-  ),
-  'odbc_fetch_object' => 
-  array (
-    0 => 'false|stdClass',
-    'statement' => 'resource',
-    'row=' => 'int',
-  ),
-  'odbc_fetch_row' => 
-  array (
-    0 => 'bool',
-    'statement' => 'resource',
-    'row=' => 'int',
-  ),
-  'odbc_field_len' => 
-  array (
-    0 => 'false|int',
-    'statement' => 'resource',
-    'field' => 'int',
-  ),
-  'odbc_field_name' => 
-  array (
-    0 => 'false|string',
-    'statement' => 'resource',
-    'field' => 'int',
-  ),
-  'odbc_field_num' => 
-  array (
-    0 => 'false|int',
-    'statement' => 'resource',
-    'field' => 'string',
-  ),
-  'odbc_field_precision' => 
-  array (
-    0 => 'int',
-    'statement' => 'resource',
-    'field' => 'int',
-  ),
-  'odbc_field_scale' => 
-  array (
-    0 => 'false|int',
-    'statement' => 'resource',
-    'field' => 'int',
-  ),
-  'odbc_field_type' => 
-  array (
-    0 => 'false|string',
-    'statement' => 'resource',
-    'field' => 'int',
-  ),
-  'odbc_foreignkeys' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'pk_catalog' => 'null|string',
-    'pk_schema' => 'string',
-    'pk_table' => 'string',
-    'fk_catalog' => 'string',
-    'fk_schema' => 'string',
-    'fk_table' => 'string',
-  ),
-  'odbc_free_result' => 
-  array (
-    0 => 'bool',
-    'statement' => 'resource',
-  ),
-  'odbc_gettypeinfo' => 
-  array (
-    0 => 'resource',
-    'odbc' => 'resource',
-    'data_type=' => 'int',
-  ),
-  'odbc_longreadlen' => 
-  array (
-    0 => 'bool',
-    'statement' => 'resource',
-    'length' => 'int',
-  ),
-  'odbc_next_result' => 
-  array (
-    0 => 'bool',
-    'statement' => 'resource',
-  ),
-  'odbc_num_fields' => 
-  array (
-    0 => 'int',
-    'statement' => 'resource',
-  ),
-  'odbc_num_rows' => 
-  array (
-    0 => 'int',
-    'statement' => 'resource',
-  ),
-  'odbc_pconnect' => 
-  array (
-    0 => 'false|resource',
-    'dsn' => 'string',
-    'user' => 'string',
-    'password' => 'string',
-    'cursor_option=' => 'int',
-  ),
-  'odbc_prepare' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'query' => 'string',
-  ),
-  'odbc_primarykeys' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog' => 'null|string',
-    'schema' => 'string',
-    'table' => 'string',
-  ),
-  'odbc_procedurecolumns' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog=' => 'null|string',
-    'schema=' => 'null|string',
-    'procedure=' => 'null|string',
-    'column=' => 'null|string',
-  ),
-  'odbc_procedures' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog=' => 'null|string',
-    'schema=' => 'null|string',
-    'procedure=' => 'null|string',
-  ),
-  'odbc_result' => 
-  array (
-    0 => 'bool|null|string',
-    'statement' => 'resource',
-    'field' => 'int|string',
-  ),
-  'odbc_result_all' => 
-  array (
-    0 => 'false|int',
-    'statement' => 'resource',
-    'format=' => 'string',
-  ),
-  'odbc_rollback' => 
-  array (
-    0 => 'bool',
-    'odbc' => 'resource',
-  ),
-  'odbc_setoption' => 
-  array (
-    0 => 'bool',
-    'odbc' => 'resource',
-    'which' => 'int',
-    'option' => 'int',
-    'value' => 'int',
-  ),
-  'odbc_specialcolumns' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'type' => 'int',
-    'catalog' => 'null|string',
-    'schema' => 'string',
-    'table' => 'string',
-    'scope' => 'int',
-    'nullable' => 'int',
-  ),
-  'odbc_statistics' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog' => 'null|string',
-    'schema' => 'string',
-    'table' => 'string',
-    'unique' => 'int',
-    'accuracy' => 'int',
-  ),
-  'odbc_tableprivileges' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog' => 'null|string',
-    'schema' => 'string',
-    'table' => 'string',
-  ),
-  'odbc_tables' => 
-  array (
-    0 => 'false|resource',
-    'odbc' => 'resource',
-    'catalog=' => 'null|string',
-    'schema=' => 'string',
-    'table=' => 'string',
-    'types=' => 'string',
   ),
   'opcache_compile_file' => 
   array (
@@ -73391,30 +71339,6 @@ return array (
   array (
     0 => 'bool',
   ),
-  'sem_acquire' => 
-  array (
-    0 => 'bool',
-    'semaphore' => 'resource',
-    'non_blocking=' => 'bool',
-  ),
-  'sem_get' => 
-  array (
-    0 => 'false|resource',
-    'key' => 'int',
-    'max_acquire=' => 'int',
-    'permissions=' => 'int',
-    'auto_release=' => 'bool',
-  ),
-  'sem_release' => 
-  array (
-    0 => 'bool',
-    'semaphore' => 'resource',
-  ),
-  'sem_remove' => 
-  array (
-    0 => 'bool',
-    'semaphore' => 'resource',
-  ),
   'serializable::__construct' => 
   array (
     0 => 'void',
@@ -74124,85 +72048,6 @@ return array (
     0 => 'false|null|string',
     'cmd' => 'string',
   ),
-  'shm_attach' => 
-  array (
-    0 => 'false|resource',
-    'key' => 'int',
-    'size=' => 'int',
-    'permissions=' => 'int',
-  ),
-  'shm_detach' => 
-  array (
-    0 => 'bool',
-    'shm' => 'resource',
-  ),
-  'shm_get_var' => 
-  array (
-    0 => 'mixed',
-    'shm' => 'resource',
-    'key' => 'int',
-  ),
-  'shm_has_var' => 
-  array (
-    0 => 'bool',
-    'shm' => 'resource',
-    'key' => 'int',
-  ),
-  'shm_put_var' => 
-  array (
-    0 => 'bool',
-    'shm' => 'resource',
-    'key' => 'int',
-    'value' => 'mixed',
-  ),
-  'shm_remove' => 
-  array (
-    0 => 'bool',
-    'shm' => 'resource',
-  ),
-  'shm_remove_var' => 
-  array (
-    0 => 'bool',
-    'shm' => 'resource',
-    'key' => 'int',
-  ),
-  'shmop_close' => 
-  array (
-    0 => 'void',
-    'shmop' => 'resource',
-  ),
-  'shmop_delete' => 
-  array (
-    0 => 'bool',
-    'shmop' => 'resource',
-  ),
-  'shmop_open' => 
-  array (
-    0 => 'false|resource',
-    'key' => 'int',
-    'mode' => 'string',
-    'permissions' => 'int',
-    'size' => 'int',
-  ),
-  'shmop_read' => 
-  array (
-    0 => 'false|string',
-    'shmop' => 'resource',
-    'offset' => 'int',
-    'size' => 'int',
-  ),
-  'shmop_size' => 
-  array (
-    0 => 'int',
-    'shmop' => 'resource',
-  ),
-  'shmop_write' => 
-  array (
-    0 => 'false|int',
-    'shmop' => 'resource',
-    'data' => 'string',
-    'offset' => 'int',
-  ),
   'show_source' => 
   array (
     0 => 'bool|string',
@@ -74488,277 +72333,6 @@ return array (
     0 => 'false|int',
     'seconds' => 'int<0, max>',
   ),
-  'snmp2_get' => 
-  array (
-    0 => 'false|string',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp2_getnext' => 
-  array (
-    0 => 'false|string',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp2_real_walk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp2_set' => 
-  array (
-    0 => 'bool',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'type' => 'array<array-key, mixed>|string',
-    'value' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp2_walk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp3_get' => 
-  array (
-    0 => 'false|string',
-    'hostname' => 'string',
-    'security_name' => 'string',
-    'security_level' => 'string',
-    'auth_protocol' => 'string',
-    'auth_passphrase' => 'string',
-    'privacy_protocol' => 'string',
-    'privacy_passphrase' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp3_getnext' => 
-  array (
-    0 => 'false|string',
-    'hostname' => 'string',
-    'security_name' => 'string',
-    'security_level' => 'string',
-    'auth_protocol' => 'string',
-    'auth_passphrase' => 'string',
-    'privacy_protocol' => 'string',
-    'privacy_passphrase' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp3_real_walk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'security_name' => 'string',
-    'security_level' => 'string',
-    'auth_protocol' => 'string',
-    'auth_passphrase' => 'string',
-    'privacy_protocol' => 'string',
-    'privacy_passphrase' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp3_set' => 
-  array (
-    0 => 'bool',
-    'hostname' => 'string',
-    'security_name' => 'string',
-    'security_level' => 'string',
-    'auth_protocol' => 'string',
-    'auth_passphrase' => 'string',
-    'privacy_protocol' => 'string',
-    'privacy_passphrase' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'type' => 'array<array-key, mixed>|string',
-    'value' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp3_walk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'security_name' => 'string',
-    'security_level' => 'string',
-    'auth_protocol' => 'string',
-    'auth_passphrase' => 'string',
-    'privacy_protocol' => 'string',
-    'privacy_passphrase' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp::__construct' => 
-  array (
-    0 => 'void',
-    'version' => 'int',
-    'hostname' => 'string',
-    'community' => 'string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmp::close' => 
-  array (
-    0 => 'bool',
-  ),
-  'snmp::get' => 
-  array (
-    0 => 'array<array-key, mixed>|false|string',
-    'objectId' => 'array<array-key, mixed>|string',
-    'preserveKeys=' => 'bool',
-  ),
-  'snmp::geterrno' => 
-  array (
-    0 => 'int',
-  ),
-  'snmp::geterror' => 
-  array (
-    0 => 'string',
-  ),
-  'snmp::getnext' => 
-  array (
-    0 => 'array<array-key, mixed>|false|string',
-    'objectId' => 'array<array-key, mixed>|string',
-  ),
-  'snmp::set' => 
-  array (
-    0 => 'bool',
-    'objectId' => 'array<array-key, mixed>|string',
-    'type' => 'array<array-key, mixed>|string',
-    'value' => 'array<array-key, mixed>|string',
-  ),
-  'snmp::setsecurity' => 
-  array (
-    0 => 'bool',
-    'securityLevel' => 'string',
-    'authProtocol=' => 'string',
-    'authPassphrase=' => 'string',
-    'privacyProtocol=' => 'string',
-    'privacyPassphrase=' => 'string',
-    'contextName=' => 'string',
-    'contextEngineId=' => 'string',
-  ),
-  'snmp::walk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'objectId' => 'array<array-key, mixed>|string',
-    'suffixAsKey=' => 'bool',
-    'maxRepetitions=' => 'int',
-    'nonRepeaters=' => 'int',
-  ),
-  'snmp_get_quick_print' => 
-  array (
-    0 => 'bool',
-  ),
-  'snmp_get_valueretrieval' => 
-  array (
-    0 => 'int',
-  ),
-  'snmp_read_mib' => 
-  array (
-    0 => 'bool',
-    'filename' => 'string',
-  ),
-  'snmp_set_enum_print' => 
-  array (
-    0 => 'true',
-    'enable' => 'bool',
-  ),
-  'snmp_set_oid_numeric_print' => 
-  array (
-    0 => 'true',
-    'format' => 'int',
-  ),
-  'snmp_set_oid_output_format' => 
-  array (
-    0 => 'true',
-    'format' => 'int',
-  ),
-  'snmp_set_quick_print' => 
-  array (
-    0 => 'bool',
-    'enable' => 'bool',
-  ),
-  'snmp_set_valueretrieval' => 
-  array (
-    0 => 'true',
-    'method' => 'int',
-  ),
-  'snmpget' => 
-  array (
-    0 => 'false|string',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmpgetnext' => 
-  array (
-    0 => 'false|string',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmprealwalk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmpset' => 
-  array (
-    0 => 'bool',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'type' => 'array<array-key, string>|string',
-    'value' => 'array<array-key, string>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmpwalk' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
-  'snmpwalkoid' => 
-  array (
-    0 => 'array<array-key, mixed>|false',
-    'hostname' => 'string',
-    'community' => 'string',
-    'object_id' => 'array<array-key, mixed>|string',
-    'timeout=' => 'int',
-    'retries=' => 'int',
-  ),
   'soapclient::__call' => 
   array (
     0 => 'mixed',
@@ -74965,209 +72539,10 @@ return array (
     'node_name=' => 'null|string',
     'node_namespace=' => 'null|string',
   ),
-  'socket_accept' => 
-  array (
-    0 => 'false|resource',
-    'socket' => 'resource',
-  ),
-  'socket_addrinfo_bind' => 
-  array (
-    0 => 'null|resource',
-    'addrinfo' => 'resource',
-  ),
-  'socket_addrinfo_connect' => 
-  array (
-    0 => 'resource',
-    'addrinfo' => 'resource',
-  ),
-  'socket_addrinfo_explain' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'addrinfo' => 'resource',
-  ),
-  'socket_addrinfo_lookup' => 
-  array (
-    0 => 'array<array-key, resource>',
-    'host' => 'string',
-    'service=' => 'string',
-    'hints=' => 'array<array-key, mixed>',
-  ),
-  'socket_bind' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    'address' => 'string',
-    'port=' => 'int',
-  ),
-  'socket_clear_error' => 
-  array (
-    0 => 'void',
-    'socket=' => 'resource',
-  ),
-  'socket_close' => 
-  array (
-    0 => 'void',
-    'socket' => 'resource',
-  ),
-  'socket_cmsg_space' => 
-  array (
-    0 => 'int|null',
-    'level' => 'int',
-    'type' => 'int',
-    'num=' => 'int',
-  ),
-  'socket_connect' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    'address' => 'string',
-    'port=' => 'int',
-  ),
-  'socket_create' => 
-  array (
-    0 => 'false|resource',
-    'domain' => 'int',
-    'type' => 'int',
-    'protocol' => 'int',
-  ),
-  'socket_create_listen' => 
-  array (
-    0 => 'false|resource',
-    'port' => 'int',
-    'backlog=' => 'int',
-  ),
-  'socket_create_pair' => 
-  array (
-    0 => 'bool',
-    'domain' => 'int',
-    'type' => 'int',
-    'protocol' => 'int',
-    '&w pair' => 'array<array-key, resource>',
-  ),
-  'socket_export_stream' => 
-  array (
-    0 => 'false|resource',
-    'socket' => 'resource',
-  ),
-  'socket_get_option' => 
-  array (
-    0 => 'array<array-key, mixed>|false|int',
-    'socket' => 'resource',
-    'level' => 'int',
-    'option' => 'int',
-  ),
   'socket_get_status' => 
   array (
     0 => 'array<array-key, mixed>',
     'fp' => 'resource',
-  ),
-  'socket_getopt' => 
-  array (
-    0 => 'array<array-key, mixed>|false|int',
-    'socket' => 'resource',
-    'level' => 'int',
-    'option' => 'int',
-  ),
-  'socket_getpeername' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    '&w address' => 'string',
-    '&w port=' => 'int',
-  ),
-  'socket_getsockname' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    '&w address' => 'string',
-    '&w port=' => 'int',
-  ),
-  'socket_import_stream' => 
-  array (
-    0 => 'false|resource',
-    'stream' => 'resource',
-  ),
-  'socket_last_error' => 
-  array (
-    0 => 'int',
-    'socket=' => 'resource',
-  ),
-  'socket_listen' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    'backlog=' => 'int',
-  ),
-  'socket_read' => 
-  array (
-    0 => 'false|string',
-    'socket' => 'resource',
-    'length' => 'int',
-    'mode=' => 'int',
-  ),
-  'socket_recv' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    '&w data' => 'string',
-    'length' => 'int',
-    'flags' => 'int',
-  ),
-  'socket_recvfrom' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    '&w data' => 'string',
-    'length' => 'int',
-    'flags' => 'int',
-    '&w address' => 'string',
-    '&w port=' => 'int',
-  ),
-  'socket_recvmsg' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    '&w message' => 'array<array-key, mixed>',
-    'flags=' => 'int',
-  ),
-  'socket_select' => 
-  array (
-    0 => 'false|int',
-    '&rw read' => 'array<array-key, resource>|null',
-    '&rw write' => 'array<array-key, resource>|null',
-    '&rw except' => 'array<array-key, resource>|null',
-    'seconds' => 'int|null',
-    'microseconds=' => 'int',
-  ),
-  'socket_send' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    'data' => 'string',
-    'length' => 'int',
-    'flags' => 'int',
-  ),
-  'socket_sendmsg' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    'message' => 'array<array-key, mixed>',
-    'flags=' => 'int',
-  ),
-  'socket_sendto' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    'data' => 'string',
-    'length' => 'int',
-    'flags' => 'int',
-    'address' => 'string',
-    'port=' => 'int',
-  ),
-  'socket_set_block' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
   ),
   'socket_set_blocking' => 
   array (
@@ -75175,51 +72550,12 @@ return array (
     'socket' => 'resource',
     'mode' => 'bool',
   ),
-  'socket_set_nonblock' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-  ),
-  'socket_set_option' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    'level' => 'int',
-    'option' => 'int',
-    'value' => 'array<array-key, mixed>|int|string',
-  ),
   'socket_set_timeout' => 
   array (
     0 => 'bool',
     'stream' => 'resource',
     'seconds' => 'int',
     'microseconds=' => 'int',
-  ),
-  'socket_setopt' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    'level' => 'int',
-    'option' => 'int',
-    'value' => 'array<array-key, mixed>|int|string',
-  ),
-  'socket_shutdown' => 
-  array (
-    0 => 'bool',
-    'socket' => 'resource',
-    'mode=' => 'int',
-  ),
-  'socket_strerror' => 
-  array (
-    0 => 'string',
-    'error_code' => 'int',
-  ),
-  'socket_write' => 
-  array (
-    0 => 'false|int',
-    'socket' => 'resource',
-    'data' => 'string',
-    'length=' => 'int',
   ),
   'socket_wsaprotocol_info_export' => 
   array (
@@ -97402,11 +94738,6 @@ return array (
     'dir' => 'string',
     'prefix' => 'string',
   ),
-  'textdomain' => 
-  array (
-    0 => 'string',
-    'domain' => 'null|string',
-  ),
   'thread::__construct' => 
   array (
     0 => 'void',
@@ -97733,233 +95064,11 @@ return array (
   array (
     0 => 'string',
   ),
-  'tidy::__construct' => 
-  array (
-    0 => 'void',
-    'filename=' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-    'useIncludePath=' => 'bool',
-  ),
-  'tidy::body' => 
-  array (
-    0 => 'null|tidyNode',
-  ),
-  'tidy::cleanrepair' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidy::diagnose' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidy::getconfig' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'tidy::gethtmlver' => 
-  array (
-    0 => 'int',
-  ),
-  'tidy::getopt' => 
-  array (
-    0 => 'bool|int|string',
-    'option' => 'string',
-  ),
-  'tidy::getoptdoc' => 
-  array (
-    0 => 'string',
-    'option' => 'string',
-  ),
-  'tidy::getrelease' => 
-  array (
-    0 => 'string',
-  ),
-  'tidy::getstatus' => 
-  array (
-    0 => 'int',
-  ),
-  'tidy::head' => 
-  array (
-    0 => 'null|tidyNode',
-  ),
-  'tidy::html' => 
-  array (
-    0 => 'null|tidyNode',
-  ),
-  'tidy::isxhtml' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidy::isxml' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidy::parsefile' => 
-  array (
-    0 => 'bool',
-    'filename' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-    'useIncludePath=' => 'bool',
-  ),
-  'tidy::parsestring' => 
-  array (
-    0 => 'bool',
-    'string' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-  ),
-  'tidy::repairfile' => 
-  array (
-    0 => 'string',
-    'filename' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-    'useIncludePath=' => 'bool',
-  ),
-  'tidy::repairstring' => 
-  array (
-    0 => 'string',
-    'string' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-  ),
-  'tidy::root' => 
-  array (
-    0 => 'null|tidyNode',
-  ),
-  'tidy_access_count' => 
-  array (
-    0 => 'int',
-    'tidy' => 'tidy',
-  ),
-  'tidy_clean_repair' => 
-  array (
-    0 => 'bool',
-    'tidy' => 'tidy',
-  ),
-  'tidy_config_count' => 
-  array (
-    0 => 'int',
-    'tidy' => 'tidy',
-  ),
-  'tidy_diagnose' => 
-  array (
-    0 => 'bool',
-    'tidy' => 'tidy',
-  ),
-  'tidy_error_count' => 
-  array (
-    0 => 'int',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_body' => 
-  array (
-    0 => 'null|tidyNode',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_config' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_error_buffer' => 
-  array (
-    0 => 'string',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_head' => 
-  array (
-    0 => 'null|tidyNode',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_html' => 
-  array (
-    0 => 'null|tidyNode',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_html_ver' => 
-  array (
-    0 => 'int',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_opt_doc' => 
-  array (
-    0 => 'string',
-    'tidy' => 'tidy',
-    'option' => 'string',
-  ),
-  'tidy_get_output' => 
-  array (
-    0 => 'string',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_release' => 
-  array (
-    0 => 'string',
-  ),
-  'tidy_get_root' => 
-  array (
-    0 => 'null|tidyNode',
-    'tidy' => 'tidy',
-  ),
-  'tidy_get_status' => 
-  array (
-    0 => 'int',
-    'tidy' => 'tidy',
-  ),
-  'tidy_getopt' => 
-  array (
-    0 => 'bool|int|string',
-    'tidy' => 'tidy',
-    'option' => 'string',
-  ),
-  'tidy_is_xhtml' => 
-  array (
-    0 => 'bool',
-    'tidy' => 'tidy',
-  ),
-  'tidy_is_xml' => 
-  array (
-    0 => 'bool',
-    'tidy' => 'tidy',
-  ),
   'tidy_load_config' => 
   array (
     0 => 'void',
     'filename' => 'string',
     'encoding' => 'string',
-  ),
-  'tidy_parse_file' => 
-  array (
-    0 => 'tidy',
-    'filename' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-    'useIncludePath=' => 'bool',
-  ),
-  'tidy_parse_string' => 
-  array (
-    0 => 'tidy',
-    'string' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-  ),
-  'tidy_repair_file' => 
-  array (
-    0 => 'string',
-    'filename' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
-    'useIncludePath=' => 'bool',
-  ),
-  'tidy_repair_string' => 
-  array (
-    0 => 'string',
-    'string' => 'string',
-    'config=' => 'array<array-key, mixed>|string',
-    'encoding=' => 'string',
   ),
   'tidy_reset_config' => 
   array (
@@ -97980,51 +95089,6 @@ return array (
     0 => 'bool',
     'option' => 'string',
     'value' => 'mixed',
-  ),
-  'tidy_warning_count' => 
-  array (
-    0 => 'int',
-    'tidy' => 'tidy',
-  ),
-  'tidynode::__construct' => 
-  array (
-    0 => 'void',
-  ),
-  'tidynode::getparent' => 
-  array (
-    0 => 'null|tidyNode',
-  ),
-  'tidynode::haschildren' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::hassiblings' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::isasp' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::iscomment' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::ishtml' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::isjste' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::isphp' => 
-  array (
-    0 => 'bool',
-  ),
-  'tidynode::istext' => 
-  array (
-    0 => 'bool',
   ),
   'time' => 
   array (
@@ -100870,11 +97934,6 @@ return array (
     'prefix=' => 'string',
     'more_entropy=' => 'bool',
   ),
-  'unixtojd' => 
-  array (
-    0 => 'false|int',
-    'timestamp=' => 'int',
-  ),
   'unlink' => 
   array (
     0 => 'bool',
@@ -103041,47 +100100,9 @@ return array (
     'json_schema=' => 'string',
     'http_headers=' => 'array<array-key, mixed>',
   ),
-  'xdebug_break' => 
-  array (
-    0 => 'bool',
-  ),
-  'xdebug_call_class' => 
-  array (
-    0 => 'string',
-    'depth=' => 'int',
-  ),
-  'xdebug_call_file' => 
-  array (
-    0 => 'string',
-    'depth=' => 'int',
-  ),
-  'xdebug_call_function' => 
-  array (
-    0 => 'string',
-    'depth=' => 'int',
-  ),
-  'xdebug_call_line' => 
-  array (
-    0 => 'int',
-    'depth=' => 'int',
-  ),
   'xdebug_clear_aggr_profiling_data' => 
   array (
     0 => 'bool',
-  ),
-  'xdebug_code_coverage_started' => 
-  array (
-    0 => 'bool',
-  ),
-  'xdebug_debug_zval' => 
-  array (
-    0 => 'void',
-    '...varName' => 'string',
-  ),
-  'xdebug_debug_zval_stdout' => 
-  array (
-    0 => 'void',
-    '...varName' => 'string',
   ),
   'xdebug_disable' => 
   array (
@@ -103091,22 +100112,9 @@ return array (
   array (
     0 => 'bool',
   ),
-  'xdebug_dump_superglobals' => 
-  array (
-    0 => 'void',
-  ),
   'xdebug_enable' => 
   array (
     0 => 'void',
-  ),
-  'xdebug_get_code_coverage' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'xdebug_get_collected_errors' => 
-  array (
-    0 => 'string',
-    'clean=' => 'bool',
   ),
   'xdebug_get_declared_vars' => 
   array (
@@ -103116,115 +100124,9 @@ return array (
   array (
     0 => 'mixed',
   ),
-  'xdebug_get_function_count' => 
-  array (
-    0 => 'int',
-  ),
-  'xdebug_get_function_stack' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'message=' => 'string',
-    'options=' => 'int',
-  ),
-  'xdebug_get_headers' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'xdebug_get_monitored_functions' => 
-  array (
-    0 => 'array<array-key, mixed>',
-  ),
-  'xdebug_get_profiler_filename' => 
-  array (
-    0 => 'false|string',
-  ),
-  'xdebug_get_stack_depth' => 
-  array (
-    0 => 'int',
-  ),
-  'xdebug_get_tracefile_name' => 
-  array (
-    0 => 'string',
-  ),
-  'xdebug_info' => 
-  array (
-    0 => 'mixed',
-    'category=' => 'string',
-  ),
-  'xdebug_is_debugger_active' => 
-  array (
-    0 => 'bool',
-  ),
   'xdebug_is_enabled' => 
   array (
     0 => 'bool',
-  ),
-  'xdebug_memory_usage' => 
-  array (
-    0 => 'int',
-  ),
-  'xdebug_peak_memory_usage' => 
-  array (
-    0 => 'int',
-  ),
-  'xdebug_print_function_stack' => 
-  array (
-    0 => 'array<array-key, mixed>',
-    'message=' => 'string',
-    'options=' => 'int',
-  ),
-  'xdebug_set_filter' => 
-  array (
-    0 => 'void',
-    'group' => 'int',
-    'list_type' => 'int',
-    'configuration' => 'array<array-key, mixed>',
-  ),
-  'xdebug_start_code_coverage' => 
-  array (
-    0 => 'void',
-    'options=' => 'int',
-  ),
-  'xdebug_start_error_collection' => 
-  array (
-    0 => 'void',
-  ),
-  'xdebug_start_function_monitor' => 
-  array (
-    0 => 'void',
-    'list_of_functions_to_monitor' => 'array<array-key, string>',
-  ),
-  'xdebug_start_trace' => 
-  array (
-    0 => 'void',
-    'trace_file' => 'mixed',
-    'options=' => 'int|mixed',
-  ),
-  'xdebug_stop_code_coverage' => 
-  array (
-    0 => 'void',
-    'cleanup=' => 'bool',
-  ),
-  'xdebug_stop_error_collection' => 
-  array (
-    0 => 'void',
-  ),
-  'xdebug_stop_function_monitor' => 
-  array (
-    0 => 'void',
-  ),
-  'xdebug_stop_trace' => 
-  array (
-    0 => 'void',
-  ),
-  'xdebug_time_index' => 
-  array (
-    0 => 'float',
-  ),
-  'xdebug_var_dump' => 
-  array (
-    0 => 'void',
-    '...var' => 'mixed',
   ),
   'xdiff_file_bdiff' => 
   array (
@@ -104266,75 +101168,11 @@ return array (
   array (
     0 => 'XPathContext',
   ),
-  'xsltprocessor::getparameter' => 
-  array (
-    0 => 'false|string',
-    'namespace' => 'string',
-    'name' => 'string',
-  ),
-  'xsltprocessor::getsecurityprefs' => 
-  array (
-    0 => 'int',
-  ),
-  'xsltprocessor::hasexsltsupport' => 
-  array (
-    0 => 'bool',
-  ),
-  'xsltprocessor::importstylesheet' => 
-  array (
-    0 => 'bool',
-    'stylesheet' => 'object',
-  ),
-  'xsltprocessor::registerphpfunctions' => 
-  array (
-    0 => 'void',
-    'functions=' => 'array<array-key, mixed>|null|string',
-  ),
-  'xsltprocessor::removeparameter' => 
-  array (
-    0 => 'bool',
-    'namespace' => 'string',
-    'name' => 'string',
-  ),
-  'xsltprocessor::setparameter' => 
-  array (
-    0 => 'bool',
-    'namespace' => 'string',
-    'name' => 'string',
-    'value' => 'string',
-  ),
   'xsltprocessor::setparameter\'1' => 
   array (
     0 => 'bool',
     'namespace' => 'string',
     'options' => 'array<array-key, mixed>',
-  ),
-  'xsltprocessor::setprofiling' => 
-  array (
-    0 => 'bool',
-    'filename' => 'null|string',
-  ),
-  'xsltprocessor::setsecurityprefs' => 
-  array (
-    0 => 'int',
-    'preferences' => 'int',
-  ),
-  'xsltprocessor::transformtodoc' => 
-  array (
-    0 => 'DOMDocument|false',
-    'document' => 'DOMNode',
-    'returnClass=' => 'null|string',
-  ),
-  'xsltprocessor::transformtouri' => 
-  array (
-    0 => 'int',
-    'document' => 'DOMDocument',
-    'uri' => 'string',
-  ),
-  'xsltprocessor::transformtoxml' => 
-  array (
-    0 => 'false|string',
-    'document' => 'DOMDocument',
   ),
   'yac::__construct' => 
   array (

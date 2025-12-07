@@ -80,6 +80,15 @@ final class InternalCallMapHandlerTest extends TestCase
      */
     private static array $ignoredFunctions = [
         'datefmt_create' => ['8.0'],
+        'datetime::add' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::createfromformat' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::modify' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::setdate' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::setisodate' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::settime' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::settimestamp' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::settimezone' => ['8.5'], // Psalm uses 'static' for better subclass support
+        'datetime::sub' => ['8.5'], // Psalm uses 'static' for better subclass support
         'lzf_compress',
         'lzf_decompress',
         'mailparse_msg_extract_part',
@@ -138,6 +147,7 @@ final class InternalCallMapHandlerTest extends TestCase
         'oci_result',
         'ocigetbufferinglob',
         'ocisetbufferinglob',
+        'soapheader::__construct' => ['8.5'], // PHP includes int in actor parameter
         'sqlsrv_fetch_array',
         'sqlsrv_fetch_object',
         'sqlsrv_get_field',

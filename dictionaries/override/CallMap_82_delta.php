@@ -26,19 +26,6 @@ return array (
     array (
       0 => 'callable(string, string, array{directory: null|string, extSubSystem: null|string, extSubURI: null|string, intSubName: null|string}):(null|resource|string)|null',
     ),
-    'mysqli::execute_query' => 
-    array (
-      0 => 'bool|mysqli_result',
-      'query' => 'non-empty-string',
-      'params=' => 'list<mixed>|null',
-    ),
-    'mysqli_execute_query' => 
-    array (
-      0 => 'bool|mysqli_result',
-      'mysql' => 'mysqli',
-      'query' => 'non-empty-string',
-      'params=' => 'list<mixed>|null',
-    ),
     'openssl_cipher_key_length' => 
     array (
       0 => 'false|int<1, max>',
@@ -99,48 +86,6 @@ return array (
         '&array' => 'array<array-key, mixed>',
         'callback' => 'callable',
         'arg=' => 'mixed',
-      ),
-    ),
-    'dba_open' => 
-    array (
-      'old' => 
-      array (
-        0 => 'resource',
-        'path' => 'string',
-        'mode' => 'string',
-        'handler=' => 'string',
-        '...handler_params=' => 'string',
-      ),
-      'new' => 
-      array (
-        0 => 'resource',
-        'path' => 'string',
-        'mode' => 'string',
-        'handler=' => 'null|string',
-        'permission=' => 'int',
-        'map_size=' => 'int',
-        'flags=' => 'int|null',
-      ),
-    ),
-    'dba_popen' => 
-    array (
-      'old' => 
-      array (
-        0 => 'resource',
-        'path' => 'string',
-        'mode' => 'string',
-        'handler=' => 'string',
-        '...handler_params=' => 'string',
-      ),
-      'new' => 
-      array (
-        0 => 'resource',
-        'path' => 'string',
-        'mode' => 'string',
-        'handler=' => 'null|string',
-        'permission=' => 'int',
-        'map_size=' => 'int',
-        'flags=' => 'int|null',
       ),
     ),
     'iterator_count' => 
