@@ -3,6 +3,802 @@
 return array (
   'added' => 
   array (
+    'bind_textdomain_codeset' => 
+    array (
+      0 => 'string',
+      'domain' => 'string',
+      'codeset=' => 'null|string',
+    ),
+    'bindtextdomain' => 
+    array (
+      0 => 'string',
+      'domain' => 'string',
+      'directory=' => 'null|string',
+    ),
+    'bzclose' => 
+    array (
+      0 => 'bool',
+      'bz' => 'resource',
+    ),
+    'bzerrno' => 
+    array (
+      0 => 'int',
+      'bz' => 'resource',
+    ),
+    'bzerror' => 
+    array (
+      0 => 'array<array-key, mixed>',
+      'bz' => 'resource',
+    ),
+    'bzerrstr' => 
+    array (
+      0 => 'string',
+      'bz' => 'resource',
+    ),
+    'bzflush' => 
+    array (
+      0 => 'bool',
+      'bz' => 'resource',
+    ),
+    'bzopen' => 
+    array (
+      0 => 'false|resource',
+      'file' => 'resource|string',
+      'mode' => 'string',
+    ),
+    'bzread' => 
+    array (
+      0 => 'false|string',
+      'bz' => 'resource',
+      'length=' => 'int',
+    ),
+    'bzwrite' => 
+    array (
+      0 => 'false|int',
+      'bz' => 'resource',
+      'data' => 'string',
+      'length=' => 'int|null',
+    ),
+    'cal_from_jd' => 
+    array (
+      0 => 'array{abbrevdayname: string, abbrevmonth: string, date: string, day: int, dayname: string, dow: int, month: int, monthname: string, year: int}',
+      'julian_day' => 'int',
+      'calendar' => 'int',
+    ),
+    'dba_fetch' => 
+    array (
+      0 => 'false|string',
+      'key' => 'array<array-key, mixed>|string',
+      'dba' => 'resource',
+      'skip=' => 'int',
+    ),
+    'dba_firstkey' => 
+    array (
+      0 => 'string',
+      'dba' => 'Dba\\Connection',
+    ),
+    'dba_nextkey' => 
+    array (
+      0 => 'string',
+      'dba' => 'Dba\\Connection',
+    ),
+    'exif_read_data' => 
+    array (
+      0 => 'array<array-key, mixed>|false',
+      'file' => 'resource|string',
+      'required_sections=' => 'null|string',
+      'as_arrays=' => 'bool',
+      'read_thumbnail=' => 'bool',
+    ),
+    'exif_thumbnail' => 
+    array (
+      0 => 'false|string',
+      'file' => 'string',
+      '&w width=' => 'int',
+      '&w height=' => 'int',
+      '&w image_type=' => 'int',
+    ),
+    'ldap_exop' => 
+    array (
+      0 => 'LDAP\\Result|bool',
+      'ldap' => 'LDAP\\Connection',
+      'request_oid' => 'string',
+      'request_data=' => 'null|string',
+      'controls=' => 'array<array-key, mixed>|null',
+      '&w response_data=' => 'string',
+      '&w response_oid=' => 'string',
+    ),
+    'ldap_exop_passwd' => 
+    array (
+      0 => 'bool|string',
+      'ldap' => 'LDAP\\Connection',
+      'user=' => 'string',
+      'old_password=' => 'string',
+      'new_password=' => 'string',
+      '&w controls=' => 'array<array-key, mixed>|null',
+    ),
+    'ldap_get_option' => 
+    array (
+      0 => 'bool',
+      'ldap' => 'LDAP\\Connection|null',
+      'option' => 'int',
+      '&w value=' => 'array<array-key, mixed>|int|string',
+    ),
+    'ldap_list' => 
+    array (
+      0 => 'LDAP\\Result|array<array-key, LDAP\\Result>|false',
+      'ldap' => 'LDAP\\Connection|array<array-key, LDAP\\Connection>',
+      'base' => 'array<array-key, mixed>|string',
+      'filter' => 'array<array-key, mixed>|string',
+      'attributes=' => 'array<array-key, mixed>',
+      'attributes_only=' => 'int',
+      'sizelimit=' => 'int',
+      'timelimit=' => 'int',
+      'deref=' => 'int',
+      'controls=' => 'array<array-key, mixed>|null',
+    ),
+    'ldap_parse_exop' => 
+    array (
+      0 => 'bool',
+      'ldap' => 'LDAP\\Connection',
+      'result' => 'LDAP\\Result',
+      '&w response_data=' => 'string',
+      '&w response_oid=' => 'string',
+    ),
+    'ldap_parse_reference' => 
+    array (
+      0 => 'bool',
+      'ldap' => 'LDAP\\Connection',
+      'entry' => 'LDAP\\ResultEntry',
+      '&w referrals' => 'array<array-key, mixed>',
+    ),
+    'ldap_parse_result' => 
+    array (
+      0 => 'bool',
+      'ldap' => 'LDAP\\Connection',
+      'result' => 'LDAP\\Result',
+      '&w error_code' => 'int',
+      '&w matched_dn=' => 'string',
+      '&w error_message=' => 'string',
+      '&w referrals=' => 'array<array-key, mixed>',
+      '&w controls=' => 'array<array-key, mixed>',
+    ),
+    'ldap_read' => 
+    array (
+      0 => 'LDAP\\Result|array<array-key, LDAP\\Result>|false',
+      'ldap' => 'LDAP\\Connection|array<array-key, LDAP\\Connection>',
+      'base' => 'array<array-key, mixed>|string',
+      'filter' => 'array<array-key, mixed>|string',
+      'attributes=' => 'array<array-key, mixed>',
+      'attributes_only=' => 'int',
+      'sizelimit=' => 'int',
+      'timelimit=' => 'int',
+      'deref=' => 'int',
+      'controls=' => 'array<array-key, mixed>|null',
+    ),
+    'ldap_search' => 
+    array (
+      0 => 'LDAP\\Result|array<array-key, LDAP\\Result>|false',
+      'ldap' => 'LDAP\\Connection|array<array-key, LDAP\\Connection>',
+      'base' => 'array<array-key, mixed>|string',
+      'filter' => 'array<array-key, mixed>|string',
+      'attributes=' => 'array<array-key, mixed>',
+      'attributes_only=' => 'int',
+      'sizelimit=' => 'int',
+      'timelimit=' => 'int',
+      'deref=' => 'int',
+      'controls=' => 'array<array-key, mixed>|null',
+    ),
+    'msg_receive' => 
+    array (
+      0 => 'bool',
+      'queue' => 'SysvMessageQueue',
+      'desired_message_type' => 'int',
+      '&w received_message_type' => 'int',
+      'max_message_size' => 'int',
+      '&w message' => 'mixed',
+      'unserialize=' => 'bool',
+      'flags=' => 'int',
+      '&w error_code=' => 'int',
+    ),
+    'msg_send' => 
+    array (
+      0 => 'bool',
+      'queue' => 'SysvMessageQueue',
+      'message_type' => 'int',
+      'message' => 'mixed',
+      'serialize=' => 'bool',
+      'blocking=' => 'bool',
+      '&w error_code=' => 'int',
+    ),
+    'msg_stat_queue' => 
+    array (
+      0 => 'array<array-key, mixed>',
+      'queue' => 'SysvMessageQueue',
+    ),
+    'mysqli::execute_query' => 
+    array (
+      0 => 'bool|mysqli_result',
+      'query' => 'non-empty-string',
+      'params=' => 'list<mixed>|null',
+    ),
+    'mysqli::get_warnings' => 
+    array (
+      0 => 'mysqli_warning',
+    ),
+    'mysqli::init' => 
+    array (
+      0 => 'false|null',
+    ),
+    'mysqli::options' => 
+    array (
+      0 => 'bool',
+      'option' => 'int',
+      'value' => 'int|string',
+    ),
+    'mysqli::poll' => 
+    array (
+      0 => 'false|int',
+      '&w read' => 'array<array-key, mixed>|null',
+      '&w error' => 'array<array-key, mixed>|null',
+      '&w reject' => 'array<array-key, mixed>',
+      'seconds' => 'int',
+      'microseconds=' => 'int',
+    ),
+    'mysqli::reap_async_query' => 
+    array (
+      0 => 'false|mysqli_result',
+    ),
+    'mysqli::set_opt' => 
+    array (
+      0 => 'bool',
+      'option' => 'int',
+      'value' => 'int|string',
+    ),
+    'mysqli::stmt_init' => 
+    array (
+      0 => 'mysqli_stmt',
+    ),
+    'mysqli_affected_rows' => 
+    array (
+      0 => 'int<-1, max>|numeric-string',
+      'mysql' => 'mysqli',
+    ),
+    'mysqli_execute' => 
+    array (
+      0 => 'bool',
+      'statement' => 'mysqli_stmt',
+      'params=' => 'list<mixed>|null',
+    ),
+    'mysqli_execute_query' => 
+    array (
+      0 => 'bool|mysqli_result',
+      'mysql' => 'mysqli',
+      'query' => 'non-empty-string',
+      'params=' => 'list<mixed>|null',
+    ),
+    'mysqli_fetch_all' => 
+    array (
+      0 => 'list<array<array-key, float|int|null|string>>',
+      'result' => 'mysqli_result',
+      'mode=' => '3',
+    ),
+    'mysqli_fetch_array' => 
+    array (
+      0 => 'array<array-key, float|int|null|string>|false|null',
+      'result' => 'mysqli_result',
+      'mode=' => '3',
+    ),
+    'mysqli_fetch_assoc' => 
+    array (
+      0 => 'array<string, float|int|null|string>|false|null',
+      'result' => 'mysqli_result',
+    ),
+    'mysqli_fetch_field' => 
+    array (
+      0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:0, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
+      'result' => 'mysqli_result',
+    ),
+    'mysqli_fetch_field_direct' => 
+    array (
+      0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:0, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
+      'result' => 'mysqli_result',
+      'index' => 'int',
+    ),
+    'mysqli_fetch_fields' => 
+    array (
+      0 => 'list<object{name:string, orgname:string, table:string, orgtable:string, max_length:0, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}>',
+      'result' => 'mysqli_result',
+    ),
+    'mysqli_fetch_row' => 
+    array (
+      0 => 'false|list<float|int|null|string>|null',
+      'result' => 'mysqli_result',
+    ),
+    'mysqli_get_warnings' => 
+    array (
+      0 => 'mysqli_warning',
+      'mysql' => 'mysqli',
+    ),
+    'mysqli_num_rows' => 
+    array (
+      0 => 'int<0, max>|numeric-string',
+      'result' => 'mysqli_result',
+    ),
+    'mysqli_options' => 
+    array (
+      0 => 'bool',
+      'mysql' => 'mysqli',
+      'option' => 'int',
+      'value' => 'int|string',
+    ),
+    'mysqli_poll' => 
+    array (
+      0 => 'false|int',
+      '&w read' => 'array<array-key, mixed>|null',
+      '&w error' => 'array<array-key, mixed>|null',
+      '&w reject' => 'array<array-key, mixed>',
+      'seconds' => 'int',
+      'microseconds=' => 'int',
+    ),
+    'mysqli_reap_async_query' => 
+    array (
+      0 => 'false|mysqli_result',
+      'mysql' => 'mysqli',
+    ),
+    'mysqli_result::fetch_all' => 
+    array (
+      0 => 'list<array<array-key, float|int|null|string>>',
+      'mode=' => '3',
+    ),
+    'mysqli_result::fetch_array' => 
+    array (
+      0 => 'array<array-key, float|int|null|string>|false|null',
+      'mode=' => '3',
+    ),
+    'mysqli_result::fetch_assoc' => 
+    array (
+      0 => 'array<string, float|int|null|string>|false|null',
+    ),
+    'mysqli_result::fetch_field' => 
+    array (
+      0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:0, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
+    ),
+    'mysqli_result::fetch_field_direct' => 
+    array (
+      0 => 'false|object{name:string, orgname:string, table:string, orgtable:string, max_length:0, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}',
+      'index' => 'int',
+    ),
+    'mysqli_result::fetch_fields' => 
+    array (
+      0 => 'list<object{name:string, orgname:string, table:string, orgtable:string, max_length:0, length:int, charsetnr:int, flags:int, type:int, decimals:int, db:string, def:\'\', catalog:\'def\'}>',
+    ),
+    'mysqli_result::fetch_row' => 
+    array (
+      0 => 'false|list<float|int|null|string>|null',
+    ),
+    'mysqli_set_opt' => 
+    array (
+      0 => 'bool',
+      'mysql' => 'mysqli',
+      'option' => 'int',
+      'value' => 'int|string',
+    ),
+    'mysqli_stmt::bind_result' => 
+    array (
+      0 => 'bool',
+      '&...w vars=' => 'mixed',
+    ),
+    'mysqli_stmt::execute' => 
+    array (
+      0 => 'bool',
+      'params=' => 'list<mixed>|null',
+    ),
+    'mysqli_stmt::num_rows' => 
+    array (
+      0 => 'int<0, max>|numeric-string',
+    ),
+    'mysqli_stmt_affected_rows' => 
+    array (
+      0 => 'int<-1, max>|numeric-string',
+      'statement' => 'mysqli_stmt',
+    ),
+    'mysqli_stmt_bind_result' => 
+    array (
+      0 => 'bool',
+      'statement' => 'mysqli_stmt',
+      '&...w vars=' => 'mixed',
+    ),
+    'mysqli_stmt_execute' => 
+    array (
+      0 => 'bool',
+      'statement' => 'mysqli_stmt',
+      'params=' => 'list<mixed>|null',
+    ),
+    'mysqli_stmt_init' => 
+    array (
+      0 => 'mysqli_stmt',
+      'mysql' => 'mysqli',
+    ),
+    'mysqli_stmt_num_rows' => 
+    array (
+      0 => 'int',
+      'statement' => 'mysqli_stmt',
+    ),
+    'odbc_cursor' => 
+    array (
+      0 => 'string',
+      'statement' => 'Odbc\\Result',
+    ),
+    'odbc_fetch_into' => 
+    array (
+      0 => 'int',
+      'statement' => 'Odbc\\Result',
+      '&w array' => 'array<array-key, mixed>',
+      'row=' => 'int|null',
+    ),
+    'odbc_field_precision' => 
+    array (
+      0 => 'int',
+      'statement' => 'Odbc\\Result',
+      'field' => 'int',
+    ),
+    'snmp2_get' => 
+    array (
+      0 => 'false|string',
+      'hostname' => 'string',
+      'community' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'snmp2_getnext' => 
+    array (
+      0 => 'false|string',
+      'hostname' => 'string',
+      'community' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'snmp3_get' => 
+    array (
+      0 => 'false|string',
+      'hostname' => 'string',
+      'security_name' => 'string',
+      'security_level' => 'string',
+      'auth_protocol' => 'string',
+      'auth_passphrase' => 'string',
+      'privacy_protocol' => 'string',
+      'privacy_passphrase' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'snmp3_getnext' => 
+    array (
+      0 => 'false|string',
+      'hostname' => 'string',
+      'security_name' => 'string',
+      'security_level' => 'string',
+      'auth_protocol' => 'string',
+      'auth_passphrase' => 'string',
+      'privacy_protocol' => 'string',
+      'privacy_passphrase' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'snmp::get' => 
+    array (
+      0 => 'array<array-key, mixed>|false|string',
+      'objectId' => 'array<array-key, mixed>|string',
+      'preserveKeys=' => 'bool',
+    ),
+    'snmp::getnext' => 
+    array (
+      0 => 'array<array-key, mixed>|false|string',
+      'objectId' => 'array<array-key, mixed>|string',
+    ),
+    'snmpget' => 
+    array (
+      0 => 'false|string',
+      'hostname' => 'string',
+      'community' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'snmpgetnext' => 
+    array (
+      0 => 'false|string',
+      'hostname' => 'string',
+      'community' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'snmpset' => 
+    array (
+      0 => 'bool',
+      'hostname' => 'string',
+      'community' => 'string',
+      'object_id' => 'array<array-key, mixed>|string',
+      'type' => 'array<array-key, string>|string',
+      'value' => 'array<array-key, string>|string',
+      'timeout=' => 'int',
+      'retries=' => 'int',
+    ),
+    'socket_addrinfo_lookup' => 
+    array (
+      0 => 'array<array-key, AddressInfo>|false',
+      'host' => 'string',
+      'service=' => 'null|string',
+      'hints=' => 'array<array-key, mixed>',
+    ),
+    'socket_create_pair' => 
+    array (
+      0 => 'bool',
+      'domain' => 'int',
+      'type' => 'int',
+      'protocol' => 'int',
+      '&w pair' => 'array<array-key, Socket>',
+    ),
+    'socket_export_stream' => 
+    array (
+      0 => 'false|resource',
+      'socket' => 'Socket',
+    ),
+    'socket_getpeername' => 
+    array (
+      0 => 'bool',
+      'socket' => 'Socket',
+      '&w address' => 'string',
+      '&w port=' => 'int',
+    ),
+    'socket_getsockname' => 
+    array (
+      0 => 'bool',
+      'socket' => 'Socket',
+      '&w address' => 'string',
+      '&w port=' => 'int',
+    ),
+    'socket_import_stream' => 
+    array (
+      0 => 'Socket|false',
+      'stream' => 'resource',
+    ),
+    'socket_recv' => 
+    array (
+      0 => 'false|int',
+      'socket' => 'Socket',
+      '&w data' => 'string',
+      'length' => 'int',
+      'flags' => 'int',
+    ),
+    'socket_recvfrom' => 
+    array (
+      0 => 'false|int',
+      'socket' => 'Socket',
+      '&w data' => 'string',
+      'length' => 'int',
+      'flags' => 'int',
+      '&w address' => 'string',
+      '&w port=' => 'int',
+    ),
+    'socket_recvmsg' => 
+    array (
+      0 => 'false|int',
+      'socket' => 'Socket',
+      '&w message' => 'array<array-key, mixed>',
+      'flags=' => 'int',
+    ),
+    'socket_select' => 
+    array (
+      0 => 'false|int',
+      '&read' => 'array<array-key, Socket>|null',
+      '&write' => 'array<array-key, Socket>|null',
+      '&except' => 'array<array-key, Socket>|null',
+      'seconds' => 'int|null',
+      'microseconds=' => 'int',
+    ),
+    'socket_set_option' => 
+    array (
+      0 => 'bool',
+      'socket' => 'Socket',
+      'level' => 'int',
+      'option' => 'int',
+      'value' => 'array<array-key, mixed>|int|string',
+    ),
+    'socket_setopt' => 
+    array (
+      0 => 'bool',
+      'socket' => 'Socket',
+      'level' => 'int',
+      'option' => 'int',
+      'value' => 'array<array-key, mixed>|int|string',
+    ),
+    'tidy::getoptdoc' => 
+    array (
+      0 => 'string',
+      'option' => 'string',
+    ),
+    'tidy::repairfile' => 
+    array (
+      0 => 'string',
+      'filename' => 'string',
+      'config=' => 'array<array-key, mixed>|null|string',
+      'encoding=' => 'null|string',
+      'useIncludePath=' => 'bool',
+    ),
+    'tidy::repairstring' => 
+    array (
+      0 => 'string',
+      'string' => 'string',
+      'config=' => 'array<array-key, mixed>|null|string',
+      'encoding=' => 'null|string',
+    ),
+    'tidy_get_error_buffer' => 
+    array (
+      0 => 'string',
+      'tidy' => 'tidy',
+    ),
+    'tidy_get_opt_doc' => 
+    array (
+      0 => 'string',
+      'tidy' => 'tidy',
+      'option' => 'string',
+    ),
+    'tidy_parse_file' => 
+    array (
+      0 => 'tidy',
+      'filename' => 'string',
+      'config=' => 'array<array-key, mixed>|null|string',
+      'encoding=' => 'null|string',
+      'useIncludePath=' => 'bool',
+    ),
+    'tidy_parse_string' => 
+    array (
+      0 => 'tidy',
+      'string' => 'string',
+      'config=' => 'array<array-key, mixed>|null|string',
+      'encoding=' => 'null|string',
+    ),
+    'tidy_repair_file' => 
+    array (
+      0 => 'string',
+      'filename' => 'string',
+      'config=' => 'array<array-key, mixed>|null|string',
+      'encoding=' => 'null|string',
+      'useIncludePath=' => 'bool',
+    ),
+    'tidy_repair_string' => 
+    array (
+      0 => 'string',
+      'string' => 'string',
+      'config=' => 'array<array-key, mixed>|null|string',
+      'encoding=' => 'null|string',
+    ),
+    'xdebug_call_class' => 
+    array (
+      0 => 'string',
+      'depth=' => 'int',
+    ),
+    'xdebug_call_file' => 
+    array (
+      0 => 'string',
+      'depth=' => 'int',
+    ),
+    'xdebug_call_function' => 
+    array (
+      0 => 'string',
+      'depth=' => 'int',
+    ),
+    'xdebug_call_line' => 
+    array (
+      0 => 'int',
+      'depth=' => 'int',
+    ),
+    'xdebug_debug_zval' => 
+    array (
+      0 => 'void',
+      '...varname=' => 'string',
+    ),
+    'xdebug_debug_zval_stdout' => 
+    array (
+      0 => 'void',
+      '...varname=' => 'string',
+    ),
+    'xdebug_dump_superglobals' => 
+    array (
+      0 => 'void',
+    ),
+    'xdebug_get_collected_errors' => 
+    array (
+      0 => 'string',
+      'emptyList=' => 'bool',
+    ),
+    'xdebug_get_profiler_filename' => 
+    array (
+      0 => 'false|string',
+    ),
+    'xdebug_get_tracefile_name' => 
+    array (
+      0 => 'string',
+    ),
+    'xdebug_print_function_stack' => 
+    array (
+      0 => 'array<array-key, mixed>',
+      'message=' => 'string',
+      'options=' => 'int',
+    ),
+    'xdebug_set_filter' => 
+    array (
+      0 => 'void',
+      'group' => 'int',
+      'listType' => 'int',
+      'configuration' => 'array<array-key, mixed>',
+    ),
+    'xdebug_start_code_coverage' => 
+    array (
+      0 => 'void',
+      'options=' => 'int',
+    ),
+    'xdebug_start_error_collection' => 
+    array (
+      0 => 'void',
+    ),
+    'xdebug_start_function_monitor' => 
+    array (
+      0 => 'void',
+      'listOfFunctionsToMonitor' => 'array<array-key, string>',
+    ),
+    'xdebug_stop_code_coverage' => 
+    array (
+      0 => 'void',
+      'cleanUp=' => 'bool',
+    ),
+    'xdebug_stop_error_collection' => 
+    array (
+      0 => 'void',
+    ),
+    'xdebug_stop_function_monitor' => 
+    array (
+      0 => 'void',
+    ),
+    'xdebug_stop_trace' => 
+    array (
+      0 => 'void',
+    ),
+    'xdebug_var_dump' => 
+    array (
+      0 => 'void',
+      '...variable=' => 'mixed',
+    ),
+    'xsltprocessor::setparameter' => 
+    array (
+      0 => 'bool',
+      'namespace' => 'string',
+      'name' => 'string',
+      'value=' => 'null|string',
+    ),
+    'xsltprocessor::transformtodoc' => 
+    array (
+      0 => 'DOMDocument|false',
+      'document' => 'DOMNode',
+      'returnClass=' => 'null|string',
+    ),
+    'xsltprocessor::transformtouri' => 
+    array (
+      0 => 'int',
+      'document' => 'DOMDocument',
+      'uri' => 'string',
+    ),
+    'xsltprocessor::transformtoxml' => 
+    array (
+      0 => 'false|null|string',
+      'document' => 'DOMDocument',
+    ),
   ),
   'changed' => 
   array (
@@ -32,6 +828,23 @@ return array (
       array (
         0 => 'true',
         'finfo' => 'finfo',
+      ),
+    ),
+    'ftp_set_option' => 
+    array (
+      'old' => 
+      array (
+        0 => 'bool',
+        'ftp' => 'FTP\\Connection',
+        'option' => 'int',
+        'value' => 'mixed',
+      ),
+      'new' => 
+      array (
+        0 => 'true',
+        'ftp' => 'FTP\\Connection',
+        'option' => 'int',
+        'value' => 'mixed',
       ),
     ),
     'grapheme_stripos' => 
@@ -1817,6 +2630,2062 @@ return array (
     array (
       0 => 'float',
     ),
+    'apcu_add' => 
+    array (
+      0 => 'bool',
+      'key' => 'string',
+      'value=' => 'mixed',
+      'ttl=' => 'int',
+    ),
+    'apcu_cache_info' => 
+    array (
+      0 => 'array<string, mixed>|false',
+      'limited=' => 'bool',
+    ),
+    'apcu_cas' => 
+    array (
+      0 => 'bool',
+      'key' => 'string',
+      'old' => 'int',
+      'new' => 'int',
+    ),
+    'apcu_clear_cache' => 
+    array (
+      0 => 'bool',
+    ),
+    'apcu_dec' => 
+    array (
+      0 => 'false|int',
+      'key' => 'string',
+      'step=' => 'int',
+      '&w success=' => 'bool',
+      'ttl=' => 'int',
+    ),
+    'apcu_delete' => 
+    array (
+      0 => 'bool',
+      'key' => 'APCuIterator|string',
+    ),
+    'apcu_enabled' => 
+    array (
+      0 => 'bool',
+    ),
+    'apcu_entry' => 
+    array (
+      0 => 'mixed',
+      'key' => 'string',
+      'callback' => 'callable(string):mixed',
+      'ttl=' => 'int',
+    ),
+    'apcu_exists' => 
+    array (
+      0 => 'bool',
+      'key' => 'string',
+    ),
+    'apcu_fetch' => 
+    array (
+      0 => 'false|mixed',
+      'key' => 'string',
+      '&w success=' => 'bool',
+    ),
+    'apcu_inc' => 
+    array (
+      0 => 'false|int',
+      'key' => 'string',
+      'step=' => 'int',
+      '&w success=' => 'bool',
+      'ttl=' => 'int',
+    ),
+    'apcu_key_info' => 
+    array (
+      0 => 'array<array-key, mixed>|null',
+      'key' => 'string',
+    ),
+    'apcu_sma_info' => 
+    array (
+      0 => 'array<array-key, mixed>|false',
+      'limited=' => 'bool',
+    ),
+    'apcu_store' => 
+    array (
+      0 => 'bool',
+      'key' => 'string',
+      'value=' => 'mixed',
+      'ttl=' => 'int',
+    ),
+    'apcuiterator::__construct' => 
+    array (
+      0 => 'void',
+      'search=' => 'array<array-key, string>|null|string',
+      'format=' => 'int',
+      'chunk_size=' => 'int',
+      'list=' => 'int',
+    ),
+    'apcuiterator::gettotalcount' => 
+    array (
+      0 => 'int',
+    ),
+    'apcuiterator::gettotalhits' => 
+    array (
+      0 => 'int',
+    ),
+    'apcuiterator::gettotalsize' => 
+    array (
+      0 => 'int',
+    ),
+    'apcuiterator::key' => 
+    array (
+      0 => 'string',
+    ),
+    'apcuiterator::next' => 
+    array (
+      0 => 'void',
+    ),
+    'apcuiterator::rewind' => 
+    array (
+      0 => 'void',
+    ),
+    'apcuiterator::valid' => 
+    array (
+      0 => 'bool',
+    ),
+    'chroot' => 
+    array (
+      0 => 'bool',
+      'directory' => 'string',
+    ),
+    'ds\\deque::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\deque::apply' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'ds\\deque::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\deque::get' => 
+    array (
+      0 => 'void',
+      'index' => 'int',
+    ),
+    'ds\\deque::insert' => 
+    array (
+      0 => 'void',
+      'index' => 'int',
+      '...values=' => 'mixed',
+    ),
+    'ds\\deque::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\deque::push' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\deque::reverse' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\deque::rotate' => 
+    array (
+      0 => 'void',
+      'rotations' => 'int',
+    ),
+    'ds\\deque::set' => 
+    array (
+      0 => 'void',
+      'index' => 'int',
+      'value' => 'mixed',
+    ),
+    'ds\\deque::sort' => 
+    array (
+      0 => 'void',
+      'comparator=' => 'callable|null',
+    ),
+    'ds\\deque::sum' => 
+    array (
+      0 => 'float|int',
+    ),
+    'ds\\deque::unshift' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\map::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\map::apply' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'ds\\map::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\map::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\map::ksort' => 
+    array (
+      0 => 'void',
+      'comparator=' => 'callable|null',
+    ),
+    'ds\\map::put' => 
+    array (
+      0 => 'void',
+      'key' => 'mixed',
+      'value' => 'mixed',
+    ),
+    'ds\\map::putall' => 
+    array (
+      0 => 'void',
+      'values' => 'mixed',
+    ),
+    'ds\\map::reverse' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\map::sort' => 
+    array (
+      0 => 'void',
+      'comparator=' => 'callable|null',
+    ),
+    'ds\\map::sum' => 
+    array (
+      0 => 'float|int',
+    ),
+    'ds\\map::union' => 
+    array (
+      0 => 'Ds\\Map',
+      'map' => 'Ds\\Map',
+    ),
+    'ds\\pair::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\priorityqueue::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\priorityqueue::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\priorityqueue::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\priorityqueue::push' => 
+    array (
+      0 => 'void',
+      'value' => 'mixed',
+      'priority' => 'int',
+    ),
+    'ds\\queue::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\queue::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\queue::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\queue::push' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\set::add' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\set::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\set::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\set::join' => 
+    array (
+      0 => 'string',
+      'glue=' => 'string',
+    ),
+    'ds\\set::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\set::remove' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\set::reverse' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\set::sort' => 
+    array (
+      0 => 'void',
+      'comparator=' => 'callable|null',
+    ),
+    'ds\\set::sum' => 
+    array (
+      0 => 'float|int',
+    ),
+    'ds\\stack::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\stack::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\stack::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\stack::push' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\vector::allocate' => 
+    array (
+      0 => 'void',
+      'capacity' => 'int',
+    ),
+    'ds\\vector::apply' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'ds\\vector::clear' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\vector::insert' => 
+    array (
+      0 => 'void',
+      'index' => 'int',
+      '...values=' => 'mixed',
+    ),
+    'ds\\vector::jsonserialize' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'ds\\vector::push' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ds\\vector::reverse' => 
+    array (
+      0 => 'void',
+    ),
+    'ds\\vector::rotate' => 
+    array (
+      0 => 'void',
+      'rotations' => 'int',
+    ),
+    'ds\\vector::set' => 
+    array (
+      0 => 'void',
+      'index' => 'int',
+      'value' => 'mixed',
+    ),
+    'ds\\vector::sort' => 
+    array (
+      0 => 'void',
+      'comparator=' => 'callable|null',
+    ),
+    'ds\\vector::sum' => 
+    array (
+      0 => 'float|int',
+    ),
+    'ds\\vector::unshift' => 
+    array (
+      0 => 'void',
+      '...values=' => 'mixed',
+    ),
+    'ev::backend' => 
+    array (
+      0 => 'int',
+    ),
+    'ev::depth' => 
+    array (
+      0 => 'int',
+    ),
+    'ev::embeddablebackends' => 
+    array (
+      0 => 'int',
+    ),
+    'ev::feedsignal' => 
+    array (
+      0 => 'void',
+      'signum' => 'int',
+    ),
+    'ev::feedsignalevent' => 
+    array (
+      0 => 'void',
+      'signum' => 'int',
+    ),
+    'ev::iteration' => 
+    array (
+      0 => 'int',
+    ),
+    'ev::now' => 
+    array (
+      0 => 'float',
+    ),
+    'ev::nowupdate' => 
+    array (
+      0 => 'void',
+    ),
+    'ev::recommendedbackends' => 
+    array (
+      0 => 'int',
+    ),
+    'ev::resume' => 
+    array (
+      0 => 'void',
+    ),
+    'ev::run' => 
+    array (
+      0 => 'void',
+      'flags=' => 'int',
+    ),
+    'ev::sleep' => 
+    array (
+      0 => 'void',
+      'seconds' => 'float',
+    ),
+    'ev::stop' => 
+    array (
+      0 => 'void',
+      'how=' => 'int',
+    ),
+    'ev::supportedbackends' => 
+    array (
+      0 => 'int',
+    ),
+    'ev::suspend' => 
+    array (
+      0 => 'void',
+    ),
+    'ev::time' => 
+    array (
+      0 => 'float',
+    ),
+    'ev::verify' => 
+    array (
+      0 => 'void',
+    ),
+    'evcheck::__construct' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evcheck::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evcheck::createstopped' => 
+    array (
+      0 => 'EvCheck',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evcheck::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evcheck::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evcheck::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evcheck::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evcheck::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evcheck::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evcheck::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evchild::__construct' => 
+    array (
+      0 => 'void',
+      'pid' => 'int',
+      'trace' => 'bool',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evchild::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evchild::createstopped' => 
+    array (
+      0 => 'EvChild',
+      'pid' => 'int',
+      'trace' => 'bool',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evchild::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evchild::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evchild::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evchild::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evchild::set' => 
+    array (
+      0 => 'void',
+      'pid' => 'int',
+      'trace' => 'bool',
+    ),
+    'evchild::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evchild::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evchild::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evembed::__construct' => 
+    array (
+      0 => 'void',
+      'other' => 'EvLoop',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evembed::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evembed::createstopped' => 
+    array (
+      0 => 'EvEmbed',
+      'other' => 'EvLoop',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evembed::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evembed::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evembed::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evembed::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evembed::set' => 
+    array (
+      0 => 'void',
+      'other' => 'EvLoop',
+    ),
+    'evembed::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evembed::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evembed::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evembed::sweep' => 
+    array (
+      0 => 'void',
+    ),
+    'event::__construct' => 
+    array (
+      0 => 'void',
+      'base' => 'EventBase',
+      'fd' => 'mixed',
+      'what' => 'int',
+      'cb' => 'callable',
+      'arg=' => 'mixed',
+    ),
+    'event::add' => 
+    array (
+      0 => 'bool',
+      'timeout=' => 'float',
+    ),
+    'event::addsignal' => 
+    array (
+      0 => 'bool',
+      'timeout=' => 'float',
+    ),
+    'event::addtimer' => 
+    array (
+      0 => 'bool',
+      'timeout=' => 'float',
+    ),
+    'event::del' => 
+    array (
+      0 => 'bool',
+    ),
+    'event::delsignal' => 
+    array (
+      0 => 'bool',
+    ),
+    'event::deltimer' => 
+    array (
+      0 => 'bool',
+    ),
+    'event::free' => 
+    array (
+      0 => 'void',
+    ),
+    'event::getsupportedmethods' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'event::pending' => 
+    array (
+      0 => 'bool',
+      'flags' => 'int',
+    ),
+    'event::set' => 
+    array (
+      0 => 'bool',
+      'base' => 'EventBase',
+      'fd' => 'mixed',
+      'what=' => 'int',
+      'cb=' => 'callable|null',
+      'arg=' => 'mixed',
+    ),
+    'event::setpriority' => 
+    array (
+      0 => 'bool',
+      'priority' => 'int',
+    ),
+    'event::settimer' => 
+    array (
+      0 => 'bool',
+      'base' => 'EventBase',
+      'cb' => 'callable',
+      'arg=' => 'mixed',
+    ),
+    'event::signal' => 
+    array (
+      0 => 'Event',
+      'base' => 'EventBase',
+      'signum' => 'int',
+      'cb' => 'callable',
+      'arg=' => 'mixed',
+    ),
+    'event::timer' => 
+    array (
+      0 => 'Event',
+      'base' => 'EventBase',
+      'cb' => 'callable',
+      'arg=' => 'mixed',
+    ),
+    'eventbase::__construct' => 
+    array (
+      0 => 'void',
+      'cfg=' => 'EventConfig|null',
+    ),
+    'eventbase::dispatch' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventbase::exit' => 
+    array (
+      0 => 'bool',
+      'timeout=' => 'float',
+    ),
+    'eventbase::free' => 
+    array (
+      0 => 'void',
+    ),
+    'eventbase::getfeatures' => 
+    array (
+      0 => 'int',
+    ),
+    'eventbase::getmethod' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbase::gettimeofdaycached' => 
+    array (
+      0 => 'float',
+    ),
+    'eventbase::gotexit' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventbase::gotstop' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventbase::loop' => 
+    array (
+      0 => 'bool',
+      'flags=' => 'int',
+    ),
+    'eventbase::priorityinit' => 
+    array (
+      0 => 'bool',
+      'n_priorities' => 'int',
+    ),
+    'eventbase::reinit' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventbase::stop' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventbuffer::add' => 
+    array (
+      0 => 'bool',
+      'data' => 'string',
+    ),
+    'eventbuffer::addbuffer' => 
+    array (
+      0 => 'bool',
+      'buf' => 'EventBuffer',
+    ),
+    'eventbuffer::appendfrom' => 
+    array (
+      0 => 'int',
+      'buf' => 'EventBuffer',
+      'len' => 'int',
+    ),
+    'eventbuffer::copyout' => 
+    array (
+      0 => 'int',
+      '&w data' => 'string',
+      'max_bytes' => 'int',
+    ),
+    'eventbuffer::drain' => 
+    array (
+      0 => 'bool',
+      'len' => 'int',
+    ),
+    'eventbuffer::enablelocking' => 
+    array (
+      0 => 'void',
+    ),
+    'eventbuffer::expand' => 
+    array (
+      0 => 'bool',
+      'len' => 'int',
+    ),
+    'eventbuffer::freeze' => 
+    array (
+      0 => 'bool',
+      'at_front' => 'bool',
+    ),
+    'eventbuffer::lock' => 
+    array (
+      0 => 'void',
+      'at_front' => 'bool',
+    ),
+    'eventbuffer::prepend' => 
+    array (
+      0 => 'bool',
+      'data' => 'string',
+    ),
+    'eventbuffer::prependbuffer' => 
+    array (
+      0 => 'bool',
+      'buf' => 'EventBuffer',
+    ),
+    'eventbuffer::pullup' => 
+    array (
+      0 => 'null|string',
+      'size' => 'int',
+    ),
+    'eventbuffer::read' => 
+    array (
+      0 => 'string',
+      'max_bytes' => 'int',
+    ),
+    'eventbuffer::readfrom' => 
+    array (
+      0 => 'int',
+      'fd' => 'mixed',
+      'howmuch=' => 'int',
+    ),
+    'eventbuffer::readline' => 
+    array (
+      0 => 'null|string',
+      'eol_style' => 'int',
+    ),
+    'eventbuffer::search' => 
+    array (
+      0 => 'false|int',
+      'what' => 'string',
+      'start=' => 'int',
+      'end=' => 'int',
+    ),
+    'eventbuffer::searcheol' => 
+    array (
+      0 => 'false|int',
+      'start=' => 'int',
+      'eol_style=' => 'int',
+    ),
+    'eventbuffer::substr' => 
+    array (
+      0 => 'string',
+      'start' => 'int',
+      'length=' => 'int',
+    ),
+    'eventbuffer::unfreeze' => 
+    array (
+      0 => 'bool',
+      'at_front' => 'bool',
+    ),
+    'eventbuffer::unlock' => 
+    array (
+      0 => 'void',
+      'at_front' => 'bool',
+    ),
+    'eventbuffer::write' => 
+    array (
+      0 => 'int',
+      'fd' => 'mixed',
+      'howmuch=' => 'int',
+    ),
+    'eventbufferevent::__construct' => 
+    array (
+      0 => 'void',
+      'base' => 'EventBase',
+      'socket=' => 'mixed',
+      'options=' => 'int',
+      'readcb=' => 'callable|null',
+      'writecb=' => 'callable|null',
+      'eventcb=' => 'callable|null',
+      'arg=' => 'mixed',
+    ),
+    'eventbufferevent::close' => 
+    array (
+      0 => 'void',
+    ),
+    'eventbufferevent::connect' => 
+    array (
+      0 => 'bool',
+      'addr' => 'string',
+    ),
+    'eventbufferevent::connecthost' => 
+    array (
+      0 => 'bool',
+      'dns_base' => 'EventDnsBase|null',
+      'hostname' => 'string',
+      'port' => 'int',
+      'family=' => 'int',
+    ),
+    'eventbufferevent::createpair' => 
+    array (
+      0 => 'array<array-key, mixed>',
+      'base' => 'EventBase',
+      'options=' => 'int',
+    ),
+    'eventbufferevent::disable' => 
+    array (
+      0 => 'bool',
+      'events' => 'int',
+    ),
+    'eventbufferevent::enable' => 
+    array (
+      0 => 'bool',
+      'events' => 'int',
+    ),
+    'eventbufferevent::free' => 
+    array (
+      0 => 'void',
+    ),
+    'eventbufferevent::getdnserrorstring' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbufferevent::getenabled' => 
+    array (
+      0 => 'int',
+    ),
+    'eventbufferevent::getinput' => 
+    array (
+      0 => 'EventBuffer',
+    ),
+    'eventbufferevent::getoutput' => 
+    array (
+      0 => 'EventBuffer',
+    ),
+    'eventbufferevent::read' => 
+    array (
+      0 => 'null|string',
+      'size' => 'int',
+    ),
+    'eventbufferevent::readbuffer' => 
+    array (
+      0 => 'bool',
+      'buf' => 'EventBuffer',
+    ),
+    'eventbufferevent::setcallbacks' => 
+    array (
+      0 => 'void',
+      'readcb' => 'callable|null',
+      'writecb' => 'callable|null',
+      'eventcb' => 'callable|null',
+      'arg=' => 'string',
+    ),
+    'eventbufferevent::setpriority' => 
+    array (
+      0 => 'bool',
+      'priority' => 'int',
+    ),
+    'eventbufferevent::settimeouts' => 
+    array (
+      0 => 'bool',
+      'timeout_read' => 'float',
+      'timeout_write' => 'float',
+    ),
+    'eventbufferevent::setwatermark' => 
+    array (
+      0 => 'void',
+      'events' => 'int',
+      'lowmark' => 'int',
+      'highmark' => 'int',
+    ),
+    'eventbufferevent::sslerror' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbufferevent::sslgetcipherinfo' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbufferevent::sslgetciphername' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbufferevent::sslgetcipherversion' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbufferevent::sslgetprotocol' => 
+    array (
+      0 => 'string',
+    ),
+    'eventbufferevent::sslrenegotiate' => 
+    array (
+      0 => 'void',
+    ),
+    'eventbufferevent::sslsocket' => 
+    array (
+      0 => 'EventBufferEvent',
+      'base' => 'EventBase',
+      'socket' => 'mixed',
+      'ctx' => 'EventSslContext',
+      'state' => 'int',
+      'options=' => 'int',
+    ),
+    'eventbufferevent::write' => 
+    array (
+      0 => 'bool',
+      'data' => 'string',
+    ),
+    'eventbufferevent::writebuffer' => 
+    array (
+      0 => 'bool',
+      'buf' => 'EventBuffer',
+    ),
+    'eventconfig::avoidmethod' => 
+    array (
+      0 => 'bool',
+      'method' => 'string',
+    ),
+    'eventconfig::requirefeatures' => 
+    array (
+      0 => 'bool',
+      'feature' => 'int',
+    ),
+    'eventconfig::setmaxdispatchinterval' => 
+    array (
+      0 => 'void',
+      'max_interval' => 'int',
+      'max_callbacks' => 'int',
+      'min_priority' => 'int',
+    ),
+    'eventdnsbase::__construct' => 
+    array (
+      0 => 'void',
+      'base' => 'EventBase',
+      'initialize' => 'bool',
+    ),
+    'eventdnsbase::addnameserverip' => 
+    array (
+      0 => 'bool',
+      'ip' => 'string',
+    ),
+    'eventdnsbase::addsearch' => 
+    array (
+      0 => 'void',
+      'domain' => 'string',
+    ),
+    'eventdnsbase::clearsearch' => 
+    array (
+      0 => 'void',
+    ),
+    'eventdnsbase::countnameservers' => 
+    array (
+      0 => 'int',
+    ),
+    'eventdnsbase::loadhosts' => 
+    array (
+      0 => 'bool',
+      'hosts' => 'string',
+    ),
+    'eventdnsbase::parseresolvconf' => 
+    array (
+      0 => 'bool',
+      'flags' => 'int',
+      'filename' => 'string',
+    ),
+    'eventdnsbase::setoption' => 
+    array (
+      0 => 'bool',
+      'option' => 'string',
+      'value' => 'string',
+    ),
+    'eventdnsbase::setsearchndots' => 
+    array (
+      0 => 'void',
+      'ndots' => 'int',
+    ),
+    'eventhttp::accept' => 
+    array (
+      0 => 'bool',
+      'socket' => 'mixed',
+    ),
+    'eventhttp::addserveralias' => 
+    array (
+      0 => 'bool',
+      'alias' => 'string',
+    ),
+    'eventhttp::bind' => 
+    array (
+      0 => 'bool',
+      'address' => 'string',
+      'port' => 'int',
+    ),
+    'eventhttp::removeserveralias' => 
+    array (
+      0 => 'bool',
+      'alias' => 'string',
+    ),
+    'eventhttp::setallowedmethods' => 
+    array (
+      0 => 'void',
+      'methods' => 'int',
+    ),
+    'eventhttp::setcallback' => 
+    array (
+      0 => 'bool',
+      'path' => 'string',
+      'cb' => 'callable',
+      'arg=' => 'string',
+    ),
+    'eventhttp::setdefaultcallback' => 
+    array (
+      0 => 'void',
+      'cb' => 'callable',
+      'arg=' => 'string',
+    ),
+    'eventhttp::setmaxbodysize' => 
+    array (
+      0 => 'void',
+      'value' => 'int',
+    ),
+    'eventhttp::setmaxheaderssize' => 
+    array (
+      0 => 'void',
+      'value' => 'int',
+    ),
+    'eventhttp::settimeout' => 
+    array (
+      0 => 'void',
+      'value' => 'int',
+    ),
+    'eventhttpconnection::__construct' => 
+    array (
+      0 => 'void',
+      'base' => 'EventBase',
+      'dns_base' => 'EventDnsBase|null',
+      'address' => 'string',
+      'port' => 'int',
+      'ctx=' => 'EventSslContext|null',
+    ),
+    'eventhttpconnection::getbase' => 
+    array (
+      0 => 'EventBase',
+    ),
+    'eventhttpconnection::getpeer' => 
+    array (
+      0 => 'void',
+      '&w address' => 'string',
+      '&w port' => 'int',
+    ),
+    'eventhttpconnection::makerequest' => 
+    array (
+      0 => 'bool|null',
+      'req' => 'EventHttpRequest',
+      'type' => 'int',
+      'uri' => 'string',
+    ),
+    'eventhttpconnection::setclosecallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+    ),
+    'eventhttpconnection::setlocaladdress' => 
+    array (
+      0 => 'void',
+      'address' => 'string',
+    ),
+    'eventhttpconnection::setlocalport' => 
+    array (
+      0 => 'void',
+      'port' => 'int',
+    ),
+    'eventhttpconnection::setmaxbodysize' => 
+    array (
+      0 => 'void',
+      'max_size' => 'int',
+    ),
+    'eventhttpconnection::setmaxheaderssize' => 
+    array (
+      0 => 'void',
+      'max_size' => 'int',
+    ),
+    'eventhttpconnection::setretries' => 
+    array (
+      0 => 'void',
+      'retries' => 'int',
+    ),
+    'eventhttpconnection::settimeout' => 
+    array (
+      0 => 'void',
+      'timeout' => 'int',
+    ),
+    'eventhttprequest::__construct' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+    ),
+    'eventhttprequest::addheader' => 
+    array (
+      0 => 'bool',
+      'key' => 'string',
+      'value' => 'string',
+      'type' => 'int',
+    ),
+    'eventhttprequest::cancel' => 
+    array (
+      0 => 'void',
+    ),
+    'eventhttprequest::clearheaders' => 
+    array (
+      0 => 'void',
+    ),
+    'eventhttprequest::closeconnection' => 
+    array (
+      0 => 'void',
+    ),
+    'eventhttprequest::findheader' => 
+    array (
+      0 => 'null|string',
+      'key' => 'string',
+      'type' => 'int',
+    ),
+    'eventhttprequest::free' => 
+    array (
+      0 => 'void',
+    ),
+    'eventhttprequest::getbufferevent' => 
+    array (
+      0 => 'EventBufferEvent|null',
+    ),
+    'eventhttprequest::getcommand' => 
+    array (
+      0 => 'int',
+    ),
+    'eventhttprequest::getconnection' => 
+    array (
+      0 => 'EventHttpConnection|null',
+    ),
+    'eventhttprequest::gethost' => 
+    array (
+      0 => 'string',
+    ),
+    'eventhttprequest::getinputbuffer' => 
+    array (
+      0 => 'EventBuffer',
+    ),
+    'eventhttprequest::getinputheaders' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'eventhttprequest::getoutputbuffer' => 
+    array (
+      0 => 'EventBuffer',
+    ),
+    'eventhttprequest::getoutputheaders' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'eventhttprequest::getresponsecode' => 
+    array (
+      0 => 'int',
+    ),
+    'eventhttprequest::geturi' => 
+    array (
+      0 => 'string',
+    ),
+    'eventhttprequest::removeheader' => 
+    array (
+      0 => 'bool',
+      'key' => 'string',
+      'type' => 'int',
+    ),
+    'eventhttprequest::senderror' => 
+    array (
+      0 => 'void',
+      'error' => 'int',
+      'reason=' => 'null|string',
+    ),
+    'eventhttprequest::sendreply' => 
+    array (
+      0 => 'void',
+      'code' => 'int',
+      'reason' => 'string',
+      'buf=' => 'EventBuffer|null',
+    ),
+    'eventhttprequest::sendreplychunk' => 
+    array (
+      0 => 'void',
+      'buf' => 'EventBuffer',
+    ),
+    'eventhttprequest::sendreplyend' => 
+    array (
+      0 => 'void',
+    ),
+    'eventhttprequest::sendreplystart' => 
+    array (
+      0 => 'void',
+      'code' => 'int',
+      'reason' => 'string',
+    ),
+    'eventlistener::__construct' => 
+    array (
+      0 => 'void',
+      'base' => 'EventBase',
+      'cb' => 'callable',
+      'data' => 'mixed',
+      'flags' => 'int',
+      'backlog' => 'int',
+      'target' => 'mixed',
+    ),
+    'eventlistener::disable' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventlistener::enable' => 
+    array (
+      0 => 'bool',
+    ),
+    'eventlistener::getbase' => 
+    array (
+      0 => 'EventBase',
+    ),
+    'eventlistener::getsocketname' => 
+    array (
+      0 => 'bool',
+      '&w address' => 'string',
+      '&w port' => 'mixed',
+    ),
+    'eventlistener::setcallback' => 
+    array (
+      0 => 'void',
+      'cb' => 'callable',
+      'arg=' => 'mixed',
+    ),
+    'eventlistener::seterrorcallback' => 
+    array (
+      0 => 'void',
+      'cb' => 'callable',
+    ),
+    'eventsslcontext::__construct' => 
+    array (
+      0 => 'void',
+      'method' => 'int',
+      'options' => 'array<array-key, mixed>',
+    ),
+    'eventutil::getlastsocketerrno' => 
+    array (
+      0 => 'int',
+      'socket=' => 'Socket|null',
+    ),
+    'eventutil::getlastsocketerror' => 
+    array (
+      0 => 'string',
+      'socket=' => 'mixed',
+    ),
+    'eventutil::getsocketfd' => 
+    array (
+      0 => 'int',
+      'socket' => 'mixed',
+    ),
+    'eventutil::getsocketname' => 
+    array (
+      0 => 'bool',
+      'socket' => 'mixed',
+      '&w address' => 'string',
+      '&w port=' => 'mixed',
+    ),
+    'eventutil::setsocketoption' => 
+    array (
+      0 => 'bool',
+      'socket' => 'mixed',
+      'level' => 'int',
+      'optname' => 'int',
+      'optval' => 'mixed',
+    ),
+    'eventutil::sslrandpoll' => 
+    array (
+      0 => 'bool',
+    ),
+    'evfork::__construct' => 
+    array (
+      0 => 'void',
+      'loop' => 'EvLoop',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evfork::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evfork::createstopped' => 
+    array (
+      0 => 'EvFork',
+      'loop' => 'EvLoop',
+      'callback' => 'callable',
+      'data=' => 'string',
+      'priority=' => 'int',
+    ),
+    'evfork::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evfork::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evfork::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evfork::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evfork::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evfork::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evfork::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evidle::__construct' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evidle::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evidle::createstopped' => 
+    array (
+      0 => 'EvIdle',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evidle::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evidle::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evidle::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evidle::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evidle::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evidle::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evidle::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evio::__construct' => 
+    array (
+      0 => 'void',
+      'fd' => 'mixed',
+      'events' => 'int',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evio::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evio::createstopped' => 
+    array (
+      0 => 'EvIo',
+      'fd' => 'resource',
+      'events' => 'int',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evio::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evio::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evio::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evio::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evio::set' => 
+    array (
+      0 => 'void',
+      'fd' => 'resource',
+      'events' => 'int',
+    ),
+    'evio::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evio::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evio::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evloop::__construct' => 
+    array (
+      0 => 'void',
+      'flags=' => 'int',
+      'data=' => 'mixed',
+      'io_interval=' => 'float',
+      'timeout_interval=' => 'float',
+    ),
+    'evloop::backend' => 
+    array (
+      0 => 'int',
+    ),
+    'evloop::child' => 
+    array (
+      0 => 'EvChild',
+      'pid' => 'int',
+      'trace' => 'bool',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::defaultloop' => 
+    array (
+      0 => 'EvLoop',
+      'flags=' => 'int',
+      'data=' => 'mixed',
+      'io_interval=' => 'float',
+      'timeout_interval=' => 'float',
+    ),
+    'evloop::embed' => 
+    array (
+      0 => 'EvEmbed',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::fork' => 
+    array (
+      0 => 'EvFork',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::idle' => 
+    array (
+      0 => 'EvIdle',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::invokepending' => 
+    array (
+      0 => 'void',
+    ),
+    'evloop::io' => 
+    array (
+      0 => 'EvIo',
+      'fd' => 'resource',
+      'events' => 'int',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::loopfork' => 
+    array (
+      0 => 'void',
+    ),
+    'evloop::now' => 
+    array (
+      0 => 'float',
+    ),
+    'evloop::nowupdate' => 
+    array (
+      0 => 'void',
+    ),
+    'evloop::periodic' => 
+    array (
+      0 => 'EvPeriodic',
+      'offset' => 'float',
+      'interval' => 'float',
+      'reschedule_cb' => 'callable',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::prepare' => 
+    array (
+      0 => 'EvPrepare',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::resume' => 
+    array (
+      0 => 'void',
+    ),
+    'evloop::run' => 
+    array (
+      0 => 'void',
+      'flags=' => 'int',
+    ),
+    'evloop::signal' => 
+    array (
+      0 => 'EvSignal',
+      'signum' => 'int',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::stat' => 
+    array (
+      0 => 'EvStat',
+      'path' => 'string',
+      'interval' => 'float',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::stop' => 
+    array (
+      0 => 'void',
+      'how=' => 'int',
+    ),
+    'evloop::suspend' => 
+    array (
+      0 => 'void',
+    ),
+    'evloop::timer' => 
+    array (
+      0 => 'EvTimer',
+      'after' => 'float',
+      'repeat' => 'float',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evloop::verify' => 
+    array (
+      0 => 'void',
+    ),
+    'evperiodic::__construct' => 
+    array (
+      0 => 'void',
+      'offset' => 'float',
+      'interval' => 'float',
+      'reschedule_cb' => 'callable',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evperiodic::again' => 
+    array (
+      0 => 'void',
+    ),
+    'evperiodic::at' => 
+    array (
+      0 => 'float',
+    ),
+    'evperiodic::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evperiodic::createstopped' => 
+    array (
+      0 => 'EvPeriodic',
+      'offset' => 'float',
+      'interval' => 'float',
+      'reschedule_cb' => 'callable',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evperiodic::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evperiodic::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evperiodic::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evperiodic::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evperiodic::set' => 
+    array (
+      0 => 'void',
+      'offset' => 'float',
+      'interval' => 'float',
+      'reschedule_cb=' => 'mixed',
+    ),
+    'evperiodic::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evperiodic::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evperiodic::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evprepare::__construct' => 
+    array (
+      0 => 'void',
+      'callback' => 'string',
+      'data=' => 'string',
+      'priority=' => 'int',
+    ),
+    'evprepare::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evprepare::createstopped' => 
+    array (
+      0 => 'EvPrepare',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evprepare::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evprepare::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evprepare::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evprepare::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evprepare::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evprepare::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evprepare::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evsignal::__construct' => 
+    array (
+      0 => 'void',
+      'signum' => 'int',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evsignal::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evsignal::createstopped' => 
+    array (
+      0 => 'EvSignal',
+      'signum' => 'int',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evsignal::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evsignal::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evsignal::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evsignal::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evsignal::set' => 
+    array (
+      0 => 'void',
+      'signum' => 'int',
+    ),
+    'evsignal::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evsignal::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evsignal::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evstat::__construct' => 
+    array (
+      0 => 'void',
+      'path' => 'string',
+      'interval' => 'float',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evstat::attr' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'evstat::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evstat::createstopped' => 
+    array (
+      0 => 'EvStat',
+      'path' => 'string',
+      'interval' => 'float',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evstat::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evstat::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evstat::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evstat::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evstat::prev' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'evstat::set' => 
+    array (
+      0 => 'void',
+      'path' => 'string',
+      'interval' => 'float',
+    ),
+    'evstat::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evstat::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evstat::stat' => 
+    array (
+      0 => 'bool',
+    ),
+    'evstat::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evtimer::__construct' => 
+    array (
+      0 => 'void',
+      'after' => 'float',
+      'repeat' => 'float',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evtimer::again' => 
+    array (
+      0 => 'void',
+    ),
+    'evtimer::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evtimer::createstopped' => 
+    array (
+      0 => 'EvTimer',
+      'after' => 'float',
+      'repeat' => 'float',
+      'callback' => 'callable',
+      'data=' => 'mixed',
+      'priority=' => 'int',
+    ),
+    'evtimer::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evtimer::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evtimer::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evtimer::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evtimer::set' => 
+    array (
+      0 => 'void',
+      'after' => 'float',
+      'repeat' => 'float',
+    ),
+    'evtimer::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evtimer::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evtimer::stop' => 
+    array (
+      0 => 'void',
+    ),
+    'evwatcher::clear' => 
+    array (
+      0 => 'int',
+    ),
+    'evwatcher::feed' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evwatcher::getloop' => 
+    array (
+      0 => 'EvLoop|null',
+    ),
+    'evwatcher::invoke' => 
+    array (
+      0 => 'void',
+      'revents' => 'int',
+    ),
+    'evwatcher::keepalive' => 
+    array (
+      0 => 'bool',
+      'value=' => 'bool',
+    ),
+    'evwatcher::setcallback' => 
+    array (
+      0 => 'void',
+      'callback' => 'callable',
+    ),
+    'evwatcher::start' => 
+    array (
+      0 => 'void',
+    ),
+    'evwatcher::stop' => 
+    array (
+      0 => 'void',
+    ),
     'grpc\\call::__construct' => 
     array (
       0 => 'void',
@@ -1973,6 +4842,11 @@ return array (
     array (
       0 => 'mixed',
       'str' => 'string',
+    ),
+    'imagecreatefromxpm' => 
+    array (
+      0 => 'GdImage|false',
+      'filename' => 'string',
     ),
     'imagick::__construct' => 
     array (
@@ -5089,6 +7963,791 @@ return array (
       'server_key' => 'string',
       'key' => 'string',
       'expiration=' => 'int',
+    ),
+    'mongodb\\bson\\binary::__construct' => 
+    array (
+      0 => 'void',
+      'data' => 'string',
+      'type=' => 'int',
+    ),
+    'mongodb\\bson\\binary::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\binary::getdata' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\binary::gettype' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\bson\\dbpointer::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\decimal128::__construct' => 
+    array (
+      0 => 'void',
+      'value' => 'string',
+    ),
+    'mongodb\\bson\\decimal128::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\document::fromphp' => 
+    array (
+      0 => 'MongoDB\\BSON\\Document',
+      'value' => 'array<array-key, mixed>|object',
+    ),
+    'mongodb\\bson\\document::tophp' => 
+    array (
+      0 => 'array<array-key, mixed>|object',
+      'typeMap=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\bson\\int64::__construct' => 
+    array (
+      0 => 'void',
+      'value' => 'int|string',
+    ),
+    'mongodb\\bson\\int64::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\iterator::key' => 
+    array (
+      0 => 'int|string',
+    ),
+    'mongodb\\bson\\javascript::__construct' => 
+    array (
+      0 => 'void',
+      'code' => 'string',
+      'scope=' => 'array<array-key, mixed>|null|object',
+    ),
+    'mongodb\\bson\\javascript::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\javascript::getcode' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\javascript::getscope' => 
+    array (
+      0 => 'null|object',
+    ),
+    'mongodb\\bson\\objectid::__construct' => 
+    array (
+      0 => 'void',
+      'id=' => 'null|string',
+    ),
+    'mongodb\\bson\\objectid::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\objectid::gettimestamp' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\bson\\packedarray::tophp' => 
+    array (
+      0 => 'array<array-key, mixed>|object',
+      'typeMap=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\bson\\regex::__construct' => 
+    array (
+      0 => 'void',
+      'pattern' => 'string',
+      'flags=' => 'string',
+    ),
+    'mongodb\\bson\\regex::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\regex::getflags' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\regex::getpattern' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\symbol::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\timestamp::__construct' => 
+    array (
+      0 => 'void',
+      'increment' => 'int|string',
+      'timestamp' => 'int|string',
+    ),
+    'mongodb\\bson\\timestamp::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\timestamp::getincrement' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\bson\\timestamp::gettimestamp' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\bson\\undefined::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\utcdatetime::__construct' => 
+    array (
+      0 => 'void',
+      'milliseconds=' => 'DateTimeInterface|MongoDB\\BSON\\Int64|int|null',
+    ),
+    'mongodb\\bson\\utcdatetime::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\bson\\utcdatetime::todatetime' => 
+    array (
+      0 => 'DateTime',
+    ),
+    'mongodb\\driver\\bulkwrite::count' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\bulkwrite::delete' => 
+    array (
+      0 => 'void',
+      'filter' => 'array<array-key, mixed>|object',
+      'deleteOptions=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\bulkwrite::insert' => 
+    array (
+      0 => 'mixed',
+      'document' => 'array<array-key, mixed>|object',
+    ),
+    'mongodb\\driver\\bulkwrite::update' => 
+    array (
+      0 => 'void',
+      'filter' => 'array<array-key, mixed>|object',
+      'newObj' => 'array<array-key, mixed>|object',
+      'updateOptions=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\clientencryption::createdatakey' => 
+    array (
+      0 => 'MongoDB\\BSON\\Binary',
+      'kmsProvider' => 'string',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\clientencryption::encrypt' => 
+    array (
+      0 => 'MongoDB\\BSON\\Binary',
+      'value' => 'mixed',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\clientencryption::encryptexpression' => 
+    array (
+      0 => 'object',
+      'expr' => 'array<array-key, mixed>|object',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\clientencryption::rewrapmanydatakey' => 
+    array (
+      0 => 'object',
+      'filter' => 'array<array-key, mixed>|object',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\command::__construct' => 
+    array (
+      0 => 'void',
+      'document' => 'array<array-key, mixed>|object',
+      'commandOptions=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\cursor::current' => 
+    array (
+      0 => 'array<array-key, mixed>|null|object',
+    ),
+    'mongodb\\driver\\cursor::getid' => 
+    array (
+      0 => 'MongoDB\\BSON\\Int64',
+    ),
+    'mongodb\\driver\\cursor::getserver' => 
+    array (
+      0 => 'MongoDB\\Driver\\Server',
+    ),
+    'mongodb\\driver\\cursor::isdead' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\cursor::key' => 
+    array (
+      0 => 'int|null',
+    ),
+    'mongodb\\driver\\cursor::next' => 
+    array (
+      0 => 'void',
+    ),
+    'mongodb\\driver\\cursor::rewind' => 
+    array (
+      0 => 'void',
+    ),
+    'mongodb\\driver\\cursor::settypemap' => 
+    array (
+      0 => 'void',
+      'typemap' => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\cursor::toarray' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\cursor::valid' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\exception\\authenticationexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\bulkwriteexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\commandexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\commandexception::getresultdocument' => 
+    array (
+      0 => 'object',
+    ),
+    'mongodb\\driver\\exception\\connectionexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\connectiontimeoutexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\encryptionexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\executiontimeoutexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\invalidargumentexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\logicexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\runtimeexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\runtimeexception::haserrorlabel' => 
+    array (
+      0 => 'bool',
+      'errorLabel' => 'string',
+    ),
+    'mongodb\\driver\\exception\\serverexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\exception\\unexpectedvalueexception::__tostring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\manager::__construct' => 
+    array (
+      0 => 'void',
+      'uri=' => 'null|string',
+      'uriOptions=' => 'array<array-key, mixed>|null',
+      'driverOptions=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::addsubscriber' => 
+    array (
+      0 => 'void',
+      'subscriber' => 'MongoDB\\Driver\\Monitoring\\Subscriber',
+    ),
+    'mongodb\\driver\\manager::createclientencryption' => 
+    array (
+      0 => 'MongoDB\\Driver\\ClientEncryption',
+      'options' => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\manager::executebulkwrite' => 
+    array (
+      0 => 'MongoDB\\Driver\\WriteResult',
+      'namespace' => 'string',
+      'bulk' => 'MongoDB\\Driver\\BulkWrite',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::executecommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::executequery' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'namespace' => 'string',
+      'query' => 'MongoDB\\Driver\\Query',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::executereadcommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::executereadwritecommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::executewritecommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\manager::getencryptedfieldsmap' => 
+    array (
+      0 => 'array<array-key, mixed>|null|object',
+    ),
+    'mongodb\\driver\\manager::getreadconcern' => 
+    array (
+      0 => 'MongoDB\\Driver\\ReadConcern',
+    ),
+    'mongodb\\driver\\manager::getreadpreference' => 
+    array (
+      0 => 'MongoDB\\Driver\\ReadPreference',
+    ),
+    'mongodb\\driver\\manager::getservers' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\manager::getwriteconcern' => 
+    array (
+      0 => 'MongoDB\\Driver\\WriteConcern',
+    ),
+    'mongodb\\driver\\manager::removesubscriber' => 
+    array (
+      0 => 'void',
+      'subscriber' => 'MongoDB\\Driver\\Monitoring\\Subscriber',
+    ),
+    'mongodb\\driver\\manager::selectserver' => 
+    array (
+      0 => 'MongoDB\\Driver\\Server',
+      'readPreference=' => 'MongoDB\\Driver\\ReadPreference|null',
+    ),
+    'mongodb\\driver\\manager::startsession' => 
+    array (
+      0 => 'MongoDB\\Driver\\Session',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\monitoring\\addsubscriber' => 
+    array (
+      0 => 'void',
+      'subscriber' => 'MongoDB\\Driver\\Monitoring\\Subscriber',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::getcommandname' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::getdurationmicros' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::geterror' => 
+    array (
+      0 => 'Exception',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::getoperationid' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::getreply' => 
+    array (
+      0 => 'object',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::getrequestid' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandfailedevent::getserviceid' => 
+    array (
+      0 => 'MongoDB\\BSON\\ObjectId|null',
+    ),
+    'mongodb\\driver\\monitoring\\commandstartedevent::getcommand' => 
+    array (
+      0 => 'object',
+    ),
+    'mongodb\\driver\\monitoring\\commandstartedevent::getcommandname' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandstartedevent::getdatabasename' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandstartedevent::getoperationid' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandstartedevent::getrequestid' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandstartedevent::getserviceid' => 
+    array (
+      0 => 'MongoDB\\BSON\\ObjectId|null',
+    ),
+    'mongodb\\driver\\monitoring\\commandsucceededevent::getcommandname' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandsucceededevent::getdurationmicros' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\monitoring\\commandsucceededevent::getoperationid' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandsucceededevent::getreply' => 
+    array (
+      0 => 'object',
+    ),
+    'mongodb\\driver\\monitoring\\commandsucceededevent::getrequestid' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\monitoring\\commandsucceededevent::getserviceid' => 
+    array (
+      0 => 'MongoDB\\BSON\\ObjectId|null',
+    ),
+    'mongodb\\driver\\monitoring\\removesubscriber' => 
+    array (
+      0 => 'void',
+      'subscriber' => 'MongoDB\\Driver\\Monitoring\\Subscriber',
+    ),
+    'mongodb\\driver\\query::__construct' => 
+    array (
+      0 => 'void',
+      'filter' => 'array<array-key, mixed>|object',
+      'queryOptions=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\readconcern::__construct' => 
+    array (
+      0 => 'void',
+      'level=' => 'null|string',
+    ),
+    'mongodb\\driver\\readconcern::bsonserialize' => 
+    array (
+      0 => 'stdClass',
+    ),
+    'mongodb\\driver\\readconcern::getlevel' => 
+    array (
+      0 => 'null|string',
+    ),
+    'mongodb\\driver\\readconcern::isdefault' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\readpreference::__construct' => 
+    array (
+      0 => 'void',
+      'mode' => 'string',
+      'tagSets=' => 'array<array-key, mixed>|null',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\readpreference::bsonserialize' => 
+    array (
+      0 => 'stdClass',
+    ),
+    'mongodb\\driver\\readpreference::gethedge' => 
+    array (
+      0 => 'null|object',
+    ),
+    'mongodb\\driver\\readpreference::getmaxstalenessseconds' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\readpreference::getmodestring' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\readpreference::gettagsets' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\server::executebulkwrite' => 
+    array (
+      0 => 'MongoDB\\Driver\\WriteResult',
+      'namespace' => 'string',
+      'bulkWrite' => 'MongoDB\\Driver\\BulkWrite',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\server::executecommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\server::executequery' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'namespace' => 'string',
+      'query' => 'MongoDB\\Driver\\Query',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\server::executereadcommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\server::executereadwritecommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\server::executewritecommand' => 
+    array (
+      0 => 'MongoDB\\Driver\\CursorInterface',
+      'db' => 'string',
+      'command' => 'MongoDB\\Driver\\Command',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\server::gethost' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\server::getinfo' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\server::getlatency' => 
+    array (
+      0 => 'int|null',
+    ),
+    'mongodb\\driver\\server::getport' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\server::gettags' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\server::gettype' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\server::isarbiter' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\server::ishidden' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\server::ispassive' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\server::isprimary' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\server::issecondary' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\serverapi::bsonserialize' => 
+    array (
+      0 => 'stdClass',
+    ),
+    'mongodb\\driver\\session::aborttransaction' => 
+    array (
+      0 => 'void',
+    ),
+    'mongodb\\driver\\session::advanceclustertime' => 
+    array (
+      0 => 'void',
+      'clusterTime' => 'array<array-key, mixed>|object',
+    ),
+    'mongodb\\driver\\session::advanceoperationtime' => 
+    array (
+      0 => 'void',
+      'operationTime' => 'MongoDB\\BSON\\TimestampInterface',
+    ),
+    'mongodb\\driver\\session::committransaction' => 
+    array (
+      0 => 'void',
+    ),
+    'mongodb\\driver\\session::endsession' => 
+    array (
+      0 => 'void',
+    ),
+    'mongodb\\driver\\session::getclustertime' => 
+    array (
+      0 => 'null|object',
+    ),
+    'mongodb\\driver\\session::getlogicalsessionid' => 
+    array (
+      0 => 'object',
+    ),
+    'mongodb\\driver\\session::getoperationtime' => 
+    array (
+      0 => 'MongoDB\\BSON\\Timestamp|null',
+    ),
+    'mongodb\\driver\\session::getserver' => 
+    array (
+      0 => 'MongoDB\\Driver\\Server|null',
+    ),
+    'mongodb\\driver\\session::gettransactionoptions' => 
+    array (
+      0 => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\session::gettransactionstate' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\session::isintransaction' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\session::starttransaction' => 
+    array (
+      0 => 'void',
+      'options=' => 'array<array-key, mixed>|null',
+    ),
+    'mongodb\\driver\\writeconcern::__construct' => 
+    array (
+      0 => 'void',
+      'w' => 'int|string',
+      'wtimeout=' => 'int|null',
+      'journal=' => 'bool|null',
+    ),
+    'mongodb\\driver\\writeconcern::bsonserialize' => 
+    array (
+      0 => 'stdClass',
+    ),
+    'mongodb\\driver\\writeconcern::getjournal' => 
+    array (
+      0 => 'bool|null',
+    ),
+    'mongodb\\driver\\writeconcern::getw' => 
+    array (
+      0 => 'int|null|string',
+    ),
+    'mongodb\\driver\\writeconcern::getwtimeout' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeconcern::isdefault' => 
+    array (
+      0 => 'bool',
+    ),
+    'mongodb\\driver\\writeconcernerror::getcode' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeconcernerror::getinfo' => 
+    array (
+      0 => 'null|object',
+    ),
+    'mongodb\\driver\\writeconcernerror::getmessage' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\writeerror::getcode' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeerror::getindex' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeerror::getinfo' => 
+    array (
+      0 => 'null|object',
+    ),
+    'mongodb\\driver\\writeerror::getmessage' => 
+    array (
+      0 => 'string',
+    ),
+    'mongodb\\driver\\writeresult::getdeletedcount' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeresult::getinsertedcount' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeresult::getmatchedcount' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeresult::getmodifiedcount' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeresult::getserver' => 
+    array (
+      0 => 'MongoDB\\Driver\\Server',
+    ),
+    'mongodb\\driver\\writeresult::getupsertedcount' => 
+    array (
+      0 => 'int',
+    ),
+    'mongodb\\driver\\writeresult::getupsertedids' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\writeresult::getwriteconcernerror' => 
+    array (
+      0 => 'MongoDB\\Driver\\WriteConcernError|null',
+    ),
+    'mongodb\\driver\\writeresult::getwriteerrors' => 
+    array (
+      0 => 'array<array-key, mixed>',
+    ),
+    'mongodb\\driver\\writeresult::isacknowledged' => 
+    array (
+      0 => 'bool',
+    ),
+    'pcntl_sigtimedwait' => 
+    array (
+      0 => 'int',
+      'signals' => 'array<array-key, mixed>',
+      '&w info=' => 'array<array-key, mixed>',
+      'seconds=' => 'int',
+      'nanoseconds=' => 'int',
+    ),
+    'pcntl_sigwaitinfo' => 
+    array (
+      0 => 'int',
+      'signals' => 'array<array-key, mixed>',
+      '&w info=' => 'array<array-key, mixed>',
+    ),
+    'readline_list_history' => 
+    array (
+      0 => 'array<array-key, mixed>',
     ),
     'redis::__destruct' => 
     array (
